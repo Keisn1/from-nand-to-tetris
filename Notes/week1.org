@@ -1,0 +1,48 @@
+#+title: Week1
+
+* Boolean logic
+** Boolean Operations
+- AND, OR, NOT
+** Boolean expressions
+- e.g.: NOT(0 OR (1 AND 1))
+** Boolean functions
+- e.g.: f(x, y, z) = (x AND y) OR (NOT(x) AND z)
+- able to write table (finite)
+** Boolean identities and laws
+*** commutative
+*** associative
+*** distribitutive
+*** DeMorgan
+- NOT (x OR y) = NOT(x) AND NOT(y)
+- NOT (x AND y) = NOT(x) OR NOT(y)
+** Boolean Algebra
+- calculating with it
+* Boolean functions
+Constructing Boolean functions from truth tables
+1. Go row-by-row for all 1 values
+2. OR them together
+3. Simplify
+** Important
+Any Boolean function can be represented using an expression containing AND, OR, and NOT operations
+* Logic gates and Hardware Description language
+** Typical Gates
+*** Nand
+**** functional specification
+if (a==1 and b==1) then out=0 else out=1
+*** AND
+*** OR
+*** NOT
+** Circuit implementation
+A electric circle that implements the logic via relays and light bulb
+** HDl
+- functional/declarative language
+** Hardware construction projects
+1. System architect decides which chips are needed
+2. For each chip, architect creates Chip API
+3. Gives A compare file
+4. Developer can build the chips
+** The developer's view
+- stub file, test script, cmp file
+- need to write hdl implementation (into the stub file)
+* Multi-bit buses
+- arrays of bits (actually called bus 󰌵)
