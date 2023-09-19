@@ -45,4 +45,4 @@ A electric circle that implements the logic via relays and light bulb
 - stub file, test script, cmp file
 - need to write hdl implementation (into the stub file)
 * Multi-bit buses
-- arrays of bits (actually called bus 󰌵)
+- arrays of bits (actually called bus )
