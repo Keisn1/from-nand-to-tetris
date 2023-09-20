@@ -46,3 +46,5 @@ A electric circle that implements the logic via relays and light bulb
 - need to write hdl implementation (into the stub file)
 * Multi-bit buses
 - arrays of bits (actually called bus )
+- also possible to output a bus
+  - and also to (de)compose a bus
