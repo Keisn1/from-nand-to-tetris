@@ -17,4 +17,9 @@ CHIP PC {
 
     PARTS:
     // Put your code here:
+
+    // Increment
+    Inc16 (in=loop, out=outInc);
+    Mux8Way16 (a=loop, b=false, c=in, d=false, e=outInc, f=false, g=in, h=false, sel[0]=reset, sel[1]=load, sel[2]=inc, out=inputReg);
+    Register (in=inputReg, load=true, out=loop, out=out);
 }
