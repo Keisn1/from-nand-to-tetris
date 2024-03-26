@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1adf8ea7-e94c-48f4-a769-ecba0c95bad3
+:END:
+#+title: NTT HDL multiple outputs
+#+date: [2023-10-14 Sa 15:31]
+#+startup: overview
+
+[[pdf:~/workspace/from-nand-to-tetris/readings/HardwareDescriptionLanguage-HDL.pdf::15++0.00][HardwareDescriptionLanguage-HDL.pdf: Page 15]]

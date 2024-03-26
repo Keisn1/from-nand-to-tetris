@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       11c29bf0-0279-4ccb-af6e-1fb73b169de5
+:END:
+#+title: Flash memory
+#+date: [2023-10-14 Sa 12:46]
+#+startup: overview
+* Read-write
+* Non-volatile

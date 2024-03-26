@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       f955aa77-da0a-41ed-8566-ca1f2012816e
+:END:
+#+title: Working with registers and memory
+#+date: [2024-01-25 Thu 12:16]
+#+startup: overview
+
+- Hack computer is a 16-bit computer
+- specified as a 16-bit number
+* [[id:f8cc3a02-23fd-4eae-8dea-145d64338cc7][16-bit Hack computer A instruction]]
+* [[id:5e75ea34-fbf1-4a6b-8dc9-32d5a6ae2962][16-bit Hack computer C instruction]]
+* [[id:8dc0b4a6-a88b-4472-800b-3a26a74d82b5][Built-in symbols]]
+* [[id:539b85ef-5d3e-4d2d-9915-4d7dedcd4890][Program termination]]

@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       517cdc42-9361-4a81-b070-99c5b50e8e42
+:END:
+#+title: NandToTetris Week 2
+#+date: [2023-10-14 Sa 11:55]
+#+startup: overview
+
+* [[id:0759746b-73cf-4f92-af76-2d979beb9f30][Half adder]]
+* [[id:e7d8bce5-b6b7-4d7a-a1cc-781d92b1529a][Full adder]]
+* [[id:1159bc81-01dd-4b16-a576-ad1509404ff5][16bitIncrementer]]
+* [[id:14860e9f-c81c-4dd8-bac0-0f533a2816be][16Add]]
+* [[id:f470b0f9-0560-4b30-896a-62b257814f8d][NandToTetris ALU]]
+* [[id:0d0ac9a6-6fb2-42f1-a306-68c65965192c][two 2 complement]] [[id:dccecf1b-dbb6-4ead-82b8-88176101b030][substraction in two 2 complement]]

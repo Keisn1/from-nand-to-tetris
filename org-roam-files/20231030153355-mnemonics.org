@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       952af543-8ed7-4121-85f2-6c63e5679f45
+:END:
+#+title: Mnemonics
+#+date: [2023-10-30 Mo 15:33]
+#+startup: overview
+
+
+Any  learning technique that aids information retention or retrieval in the human memory
+
+* Programming Languages

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       5cac3bf6-0efa-4d83-b83b-3a1eb69ab00c
+:END:
+#+title: NandToTetris RAM
+#+date: [2023-10-14 Sa 12:28]
+#+startup: overview
+
+Volatile (not remembering when power is gone)
+RandomAccess
+* [[id:6af8df56-f298-4f74-90f4-c3bc8af0ea49][NandToTetris Registers]]
+* [[id:39bc2999-1ab0-4b17-84b0-a253e08916f3][NandToTetris RAM Unit]]

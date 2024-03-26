@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       dc12fcf4-1401-48f1-9e9f-34dde72aaabc
+:END:
+#+title: NTT RAM8
+#+date: [2023-10-14 Sa 12:03]
+#+startup: overview
+
+* Tips
+- Feed the /in/ value to all registers, simultaneously
+- Use mux/demux chips to select the right register
+* Diagram
+[[file:Images/NandToTetris/8-bit-register-ram.png]]

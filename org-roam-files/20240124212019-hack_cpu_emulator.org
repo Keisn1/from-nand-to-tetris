@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       04b3de9b-c1c7-4efe-a979-51be5a4f4a63
+:END:
+#+title: Hack CPU Emulator
+#+date: [2024-01-24 Wed 21:20]
+#+startup: overview
+
+- other way to write a Hack proramm
+- files can be loaded into instruction memory
+- interpreter
+- friendly tool for debugging

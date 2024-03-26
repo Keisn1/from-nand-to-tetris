@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       353ab57e-9b93-4806-882f-9b26a7cc9372
+:END:
+#+title: Hack computer screen
+#+date: [2024-01-24 Wed 19:05]
+#+startup: overview
+
+- Using a Screen Memory Map
+- designated memory area, dedicated to manage a display unit
+- physical display is continuously /refreshed/ from the memory map
+- output is effected by writing code that manipurates the screen
+
+* Display unit
+- 256 by 512 = 131072
+- sequence of 16-bit values (also called words)
+- 8192 * 16bit = 131072
+- every pixel gets a bit
+
+* Mapping
+- only 16 bits retreivable
+  - 32 * 16 = 512 = 1 row
+  - setting pixel on/off
+    1. i=32*row + col/16 (integer division, only divisor without remainder)
+       word = Screen[32*row + col/16 + 16384]
+       - screen will be a chip
+         - chip will be part of the data memory
+         - base address changes in context of memory
+         - need to add base-memory
+    2. Set the (col%16)th bit of word to 0 or 1
+    3. Commit word to the RAM
+
+
+[[file:images/Screen_memory_map.png][Screen memory map]]

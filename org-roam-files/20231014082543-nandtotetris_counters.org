@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       6091f460-a5ba-4182-bdd2-4a4a0d5c2d24
+:END:
+#+title: NandToTetris Counters
+#+date: [2023-10-14 Sa 08:25]
+#+startup: overview
+
+* Counter is rather meant as Program Counter (PC)
+* Why are they important?
+- Computer needs to know what to do next
+  - PC (Program Counter) contains the address of the instructions that will be done next
+  - fetch and execute
+* Control Settings
+** Reset: Fetch first instruction (PC=0) - resetting
+** Next: Fetch next instruction (PC++) - incrementing
+** Goto: fetch instruction n (PC=n) - setting
+* Abstraction
+[[file:Images/NandToTetris/CounterAbstraction.png]]

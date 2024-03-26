@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       9e70ae0a-4d44-4272-b80f-d2dbec4f7f34
+:END:
+#+title: Hack computer keyboard
+#+date: [2024-01-24 Wed 20:59]
+#+startup: overview
+
+- keyboard memory map
+- don't need more than 16bits (single register)
+- chip-keyboard
+  - pressed key (scan code) travels and appears in keyboard memory map
+  - key will appear in its binary manifestation inside the register
+- when keyboard is idle, number in memMap is 0
+- probe contents of the contents of RAM[24576]
+
+* Hack character set
+
+[[file:images/Hack-Character-set.png]]

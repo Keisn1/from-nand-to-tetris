@@ -1,0 +1,33 @@
+:PROPERTIES:
+:ID:       f8cc3a02-23fd-4eae-8dea-145d64338cc7
+:END:
+#+title: Hack computer A instruction
+#+date: [2023-10-30 Mo 19:48]
+#+startup: overview
+
+Addressing Instructions
+[[id:214d7233-a7ea-483f-99dc-90c29db299f0][A register]]
+* Syntax ~@value~
+- non-negativ decimal constant (<= 32767)
+- symbol referring to such a constant
+** binary syntax ~0value~ (value is 15-bit binary number)
+@21 = 00000000000010101
+- special code '0' at the beginning
+
+* Semantics
+- sets the A register to /value/
+- *Side effect*: RAM[A] becomes the select RAM register ([[id:483a3830-7d64-4df4-bc7a-1c267ad0a5c4][M register (RAM register)]])
+* Example
+~@21~
+- sets the A register to 21 (store address into A)
+- RAM[21] becomes the selected RAM register (then operate on the address stored)
+
+* Usage example
+:PROPERTIES:
+:ID:       632ee093-4cd0-4b7e-9201-7ff0d17bb5c2
+:END:
+#+begin_src go
+// set RAM[100] to -1
+@100 // A=100
+M=-1 // RAM[100]=-1
+#+end_src

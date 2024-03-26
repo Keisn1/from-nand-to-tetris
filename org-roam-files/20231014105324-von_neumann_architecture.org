@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       27d9c3ed-43d8-4f34-9d83-d71752707b40
+:END:
+#+title: Von Neumann architecture
+#+date: [2023-10-14 Sa 10:53]
+#+startup: overview
+
+*1945*
+* Diagram
+[[file:Images/NandToTetris/VonNeumannArchitecture.png]]
+* Input
+* Memory
+* CPU
+** [[id:7f44e05c-18fe-4ab3-883f-a3868de1591a][ALU Arithmetic Logic Unit]], [[id:f470b0f9-0560-4b30-896a-62b257814f8d][NandToTetris Hack ALU]]
+** Control
+* Output

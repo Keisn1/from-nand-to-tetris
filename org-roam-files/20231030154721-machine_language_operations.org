@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       d56ccefd-ff02-4719-9709-67917ed81234
+:END:
+#+title: Machine language operations
+#+date: [2023-10-30 Mo 15:47]
+#+startup: overview
+
+* What it is?
+- corresponds to what's implemented in Hardware
+  - arithmetics
+  - Logical operations
+  - Flow control
+
+* Difference between machine languages
+- richness of operations (divisions? bulk copy?)
+- data types (width, floating point...)

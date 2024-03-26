@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       1d2fbc68-0170-43d9-8c44-d2d1cea3d683
+:END:
+#+title: Flip Flops (latches; deutsch=Riegel)
+#+date: [2023-09-29 Fr 07:47]
+
+* Remembering State
+- remember one bit of information
+- Gates that can flip between two states
+https://en.wikipedia.org/wiki/Flip-flop_(electronics)
+* [[id:63830599-296f-43a9-8ab5-5bbe0dd99d92][NandToTetris Clocked Chips]]
+* [[id:4a70291f-a012-4fd0-905f-9d8fc1f24266][NandToTetris clocked data d flip flop]]
+* Implementation
+** Connecting 2 Nand Gates in a loop (not the only way)
+1. Init with Ones on both Nand Gates
+   - will result in nothing, since second input is not set
+2. As soon as One input is set to Zero, the other Gate will have
+   the second input necessary
+   - Results in a stable circuitry for every future change
+   - Lets you infer where the last change has taken place (upper or bottom Nand)
+3. you then need to abstract this, built stuff around and make it usable with the clock

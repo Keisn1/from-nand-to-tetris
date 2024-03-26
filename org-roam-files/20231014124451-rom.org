@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       79edffa4-b49a-468b-a27f-e19153c6a69d
+:END:
+#+title: ROM
+#+date: [2023-10-14 Sa 12:44]
+#+startup: overview
+
+Read-only memory
+Non-volatile, maintains state
+non dependent on power supply
+* Used for Boot-up
+- loads startup code from disk

@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       4a70291f-a012-4fd0-905f-9d8fc1f24266
+:END:
+#+title: NandToTetris clocked data d flip flop
+#+date: [2023-09-29 Fr 07:50]
+#+startup: overview
+
+* DFF
+- Chip that remembers the input of last time unit and outputs it in the next time unit
+** [[id:63830599-296f-43a9-8ab5-5bbe0dd99d92][NandToTetris Clocked Chips]]
+* Implementation
+In [[id:e0f2fef8-8acd-4b73-8903-980dfd8a3d36][NandToTetris]], this is given.
+It is possible to create them from NandGates.
+1. Loop achieving un-clocked flip-flop
+2. Isolation across time steps using a 'master-slave' setup
+* Remembering a bit forever
+[[id:918a2cbc-bb80-422d-94f7-cabcc49ac553][sequential logic]]
+if load(t-1) then out(t)=in(t-1)
+else out(t)=out(t-1)
+|      | legend | time1  | time2  | time3   | time4   | time5  |
+|------+--------+--------+--------+---------+---------+--------|
+| load |      1 | ------ |        |         | ------  |        |
+|      |      0 |        | ------ | ------  |         | ------ |
+|------+--------+--------+--------+---------+---------+--------|
+| in   |      1 | ------ |        |         |         |        |
+|      |      0 |        | ------ | ------  | ------  | ------ |
+|------+--------+--------+--------+---------+---------+--------|
+| out  |      1 | nohist | ------ | ------  | ------  |        |
+|      |      1 | nohist |        |         |         | ------ |
+|------+--------+--------+--------+---------+---------+--------|
+| Why? |        |        | in(t1) | out(t2) | out(t2) | in(t4) |
+
+* Diagram presentation
+[[file:Images/NandToTetris/RememberForevertChip.png]]
+[[file:Images/NandToTetris/1-bit-register.png]]

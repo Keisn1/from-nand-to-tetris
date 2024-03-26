@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       1159bc81-01dd-4b16-a576-ad1509404ff5
+:END:
+#+title: 16bitIncrementer
+#+date: [2023-09-29 Fr 06:15]
+
+Need to negate 1's from right to left until the first 0
+#+begin_src
+CHIP Inc16 {
+    IN in[16];
+    OUT out[16];
+
+    PARTS:
+   // Put you code here:
+    Add16 (a=in, b=true, out=out);
+}
+#+end_src

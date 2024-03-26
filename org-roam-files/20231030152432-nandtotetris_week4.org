@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       5a21a174-7691-41e9-a515-adda1b31d306
+:END:
+#+title: NandToTetris Week 4
+#+date: [2023-10-30 Mo 15:24]
+#+startup: overview
+
+* [[id:bb543e76-a359-4122-83dd-e436fce0536a][Universal Turing Machine]]
+* [[id:27d9c3ed-43d8-4f34-9d83-d71752707b40][Von Neumann architecture]]
+* [[id:87faf1f0-3d18-4f0d-9903-bd92f853b870][Machine Languages]]
+* [[id:48cd71b9-eadc-4e7e-a693-01eb94d551e7][Hack computer]]

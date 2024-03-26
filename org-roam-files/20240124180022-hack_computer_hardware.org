@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       6ecd4e13-b3b4-4707-823c-4f19c801cd13
+:END:
+#+title: Hack computer Hardware
+#+date: [2024-01-24 Wed 18:00]
+#+startup: overview
+
+- 16-bit computer
+- nowadays 64-bits usually (x86_64)
+* Components
+** Instruction memory (ROM)
+- also a sequence of 16-bit registers
+** Data memory (RAM)
+- sequence of 16-bit registers
+- [[id:7425c6d3-a86d-4828-9448-86c2459150b7][Hack computer registers]]
+** CPU
+- performs 16-bit instructions
+** Instuction bus / data bus /address buses
+- enable to move data
+- highways of 16 lanes, moving chunks of 16 bits
+*** data bus
+- connects CPU and data memory
+*** instruction bus
+- moves instructions from instruction memory to CPU
+*** address buses

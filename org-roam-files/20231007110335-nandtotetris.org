@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       e0f2fef8-8acd-4b73-8903-980dfd8a3d36
+:END:
+#+title: NandToTetris
+#+date: [2023-10-07 Sa 11:03]
+#+startup: overview
+
+
+* Chips Week 1
+** See repo
+- Not, And, Or, Nand, Nor, Xor, Mux, Demux, 16 bit versions
+* [[id:517cdc42-9361-4a81-b070-99c5b50e8e42][NandToTetris Week2]]
+* [[id:1a079a93-6100-4aa8-a606-ca7005cccd3d][NandToTetris Week3]]
+* [[id:5a21a174-7691-41e9-a515-adda1b31d306][NandToTetris Week4]]
+* [[id:a065d86c-37a0-43a0-b67b-b1cee9747f95][NandToTetris HDL]]

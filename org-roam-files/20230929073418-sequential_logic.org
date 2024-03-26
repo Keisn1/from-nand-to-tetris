@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       918a2cbc-bb80-422d-94f7-cabcc49ac553
+:END:
+#+title: sequential logic
+#+date: [2023-09-29 Fr 07:34]
+
+Clock breaks physical/continious time up in time units
+Nothing changes within a integer time unit
+
+sequential: out[t] = function( in[t-1] )
+combinatorial: out[t] = function( in[t] )
+
+Implemented via [[id:1d2fbc68-0170-43d9-8c44-d2d1cea3d683][Flip_Flops]]
+
+Sequential chips are represented with triangle

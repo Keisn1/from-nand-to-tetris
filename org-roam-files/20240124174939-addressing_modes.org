@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       daf3877d-6c9f-494e-bd7e-cdea797a88a6
+:END:
+#+title: Addressing modes
+#+date: [2024-01-24 Wed 17:49]
+#+startup: overview
+
+* Register addressing
+- operating only on registers
+- e.g. Addition of 2 registers
+* Direct
+- directly writing to Memory, by also accessing it
+- add R1 to M[200]
+
+* indirect
+- addressing memory indirectly through the address stored somewhere
+- add R1 @A, memory not specified but written somewhere
+
+* Immediate
+- Add 73, R1 ... constant is part of the instruction

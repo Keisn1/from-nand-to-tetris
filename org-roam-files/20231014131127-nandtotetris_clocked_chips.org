@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       63830599-296f-43a9-8ab5-5bbe0dd99d92
+:END:
+#+title: NandToTetris Clocked Chips
+#+date: [2023-10-14 Sa 13:11]
+#+startup: overview
+[[pdf:~/workspace/from-nand-to-tetris/readings/HDLTutorial.pdf::27++0.00][HDLTutorial.pdf: Page 27 Clocked Chips]]

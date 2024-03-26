@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       0759746b-73cf-4f92-af76-2d979beb9f30
+:END:
+#+title: Half adder
+#+date: [2023-09-29 Fr 04:25]
+
+Digital logic circuit that performs binary addition of 2 single-bit binary numbers
+
+
+i.e.
+#+begin_src
+CHIP HalfAdder {
+    IN a, b;    // 1-bit inputs
+    OUT sum,    // Right bit of a + b
+        carry;  // Left bit of a + b
+
+    PARTS:
+    // Put you code here:
+    Xor (a=a, b=b, out=sum);
+    And (a=a, b=b, out=carry);
+}
+#+end_src

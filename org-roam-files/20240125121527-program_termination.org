@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       539b85ef-5d3e-4d2d-9915-4d7dedcd4890
+:END:
+#+title: Program termination
+#+date: [2024-01-25 Thu 12:15]
+#+startup: overview
+
+- need to prevent ~NULL instructions~
+- computers never stand still
+- can e.g. end program with an infinite loop
+  #+begin_src asm
+    @0                          ;depends on the line number
+    0;JMP
+  #+end_src

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       8106f754-748f-4aa9-bede-b693a73a9ec4
+:END:
+#+title: Cache Memory
+#+date: [2023-10-14 Sa 12:47]
+#+startup: overview
+
+* Design of memorey to solve a certian Trade-off
+* Trade-off between More money in CPU and Memory
+- Larger memory -> more expensive
+- faster memory -> more expensive
+- usually solved by
+  - large cheap memory
+    - here there is the data less frequently used
+  - small expensive fast memory
+    - here there is the data 'currently' in use
+    -
+
+* Today whole hierarchy of caches

@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       197f1a13-d9ed-44fc-a458-e944cc5296de
+:END:
+#+title: NandToTetris Input/output
+#+date: [2023-10-30 Mo 18:36]
+#+startup: overview
+
+* Types
+- keyboard, mouse, camera, sensors
+
+* CPU needs some kind of protocol to talk to each of them
+- Software "Drivers" know these protocols
+
+* Methods
+** [[id:904a1103-041e-4ae9-84d6-525267dc43c5][Memory Mapping]] into RAM
+
+* [[id:353ab57e-9b93-4806-882f-9b26a7cc9372][Hack computer screen]]

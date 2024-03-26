@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       a5a45623-8bea-4e48-bd70-9bc89e7fe3f8
+:END:
+#+title: Hack assembly 
+#+date: [2024-01-24 Wed 21:19]
+#+startup: overview

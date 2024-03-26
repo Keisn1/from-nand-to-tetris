@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       fb76f267-2604-4ce9-b77c-b708fb8d4fb2
+:END:
+#+title: NTT RAM512
+#+date: [2023-10-14 Sa 22:30]
+#+startup: overview

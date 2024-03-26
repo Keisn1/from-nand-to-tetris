@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       21aeb2b8-b9b1-477a-adda-f673c58c8ed9
+:END:
+#+title: Memory hierarchy
+#+date: [2024-01-24 Wed 17:52]
+#+startup: overview
+
+[[file:Images/NandToTetris/solution-memory-hierarchy.png][Memory hierarchy]]
+* [[id:6af8df56-f298-4f74-90f4-c3bc8af0ea49][Registers]]
+- inside the CPU (nowadays)
+* Cache
+* Main memory
+* Disk

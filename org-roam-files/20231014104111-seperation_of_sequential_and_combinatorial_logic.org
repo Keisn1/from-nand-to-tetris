@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       4465306c-7e61-4ba7-9567-db33ef425b8d
+:END:
+#+title: Seperation of Sequential and Combinatorial logic
+#+date: [2023-10-14 Sa 10:41]
+#+startup: overview
+
+
+Combinatorial Logic and Sequential Logic seperated from each other
+One circuit flow between those 2
+
+[[file:Images/NandToTetris/SequentialLogicImplementation.png]]

@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       ff658299-32c8-41c8-b340-a04c6456eba0
+:END:
+#+title: Hack computer Control
+#+date: [2024-01-24 Wed 18:06]
+#+startup: overview
+
+
+1. ROM is loaded with Hack program
+2. Reset button is pushed
+3. Program starts running

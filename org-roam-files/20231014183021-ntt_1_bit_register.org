@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       505389fd-73bb-421f-b795-2e0a68536c85
+:END:
+#+title: NTT 1-bit Register
+#+date: [2023-10-14 Sa 18:30]
+#+startup: overview
+
+
+[[file:~/workspace/from-nand-to-tetris/nand2tetris/projects/03/a/Bit.hdl]]
+* Register NandToTetris
+- take 1-bit remembering unit (Register) to a multi-bit register (the actual *Register*)
+- w (word width): 16-bit, 32-bit, 64-bit
+- Register's state: the value which is currently stored inside the register
+- builtin-chips in nandToTetris/tools/ has a Register Chip
+  - in HardwareSimulator -> RegisterChip is clocked
+  - Clock-icon will pop-up -> will simulate the train of cycles
+    - in 2 cycles per time unit
+  - GUI has a sideeffect that shows the current state

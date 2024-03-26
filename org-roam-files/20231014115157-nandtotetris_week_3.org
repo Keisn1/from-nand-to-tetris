@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       1a079a93-6100-4aa8-a606-ca7005cccd3d
+:END:
+#+title: NandToTetris Week 3
+#+date: [2023-10-14 Sa 11:51]
+#+startup: overview
+
+* Memory and Sequential logic
+** [[id:918a2cbc-bb80-422d-94f7-cabcc49ac553][sequential logic]]
+** [[id:4465306c-7e61-4ba7-9567-db33ef425b8d][Seperation of Sequential and Combinatorial logic]]
+** [[id:1d2fbc68-0170-43d9-8c44-d2d1cea3d683][Flip Flops (latches; deutsch=Riegel)]]
+** [[id:4a70291f-a012-4fd0-905f-9d8fc1f24266][NandToTetris clocked data d flip flop]]
+* [[id:555bcbd2-cf92-4682-9fe4-e40109e56e0f][NandToTetris Memory]]
+* [[id:27d9c3ed-43d8-4f34-9d83-d71752707b40][Von Neumann architecture]]
+* [[id:6091f460-a5ba-4182-bdd2-4a4a0d5c2d24][NandToTetris Counters]]
+* [[id:8ffb0f19-9b92-4160-84e9-6e833a339b69][NandToTetris Chips Week 3]]

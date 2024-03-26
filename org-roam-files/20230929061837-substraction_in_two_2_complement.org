@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       dccecf1b-dbb6-4ead-82b8-88176101b030
+:END:
+#+title: substraction in two 2 complement
+#+date: [2023-09-29 Fr 06:18]
+
+z = x - y
+translates naturally to z = x + (-y) in [[id:0d0ac9a6-6fb2-42f1-a306-68c65965192c][two_2_complement]]

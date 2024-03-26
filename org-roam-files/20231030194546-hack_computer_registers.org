@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       7425c6d3-a86d-4828-9448-86c2459150b7
+:END:
+#+title: Hack computer registers
+#+date: [2023-10-30 Mo 19:45]
+#+startup: overview
+
+[[id:6af8df56-f298-4f74-90f4-c3bc8af0ea49][NandToTetris Registers]]
+* D register
+- holds 16-bit value
+  - value
+
+* A register
+:PROPERTIES:
+:ID:       214d7233-a7ea-483f-99dc-90c29db299f0
+:END:
+[[id:f8cc3a02-23fd-4eae-8dea-145d64338cc7][Hack computer A instruction]]
+- also 16-bit value
+  - address
+  - value
+- addressing register
+  - the address in A determines which register is in M register
+
+* M register (RAM register)
+:PROPERTIES:
+:ID:       483a3830-7d64-4df4-bc7a-1c267ad0a5c4
+:END:
+- represents 16-bit RAM register addressed by A
+- at any given point only one register is chosen as M register
+- see [[id:632ee093-4cd0-4b7e-9201-7ff0d17bb5c2][Usage example]]

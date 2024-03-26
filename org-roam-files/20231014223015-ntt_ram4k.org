@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       32757f90-756c-42f0-8bb7-a2b0e3c661bf
+:END:
+#+title: NTT RAM4K
+#+date: [2023-10-14 Sa 22:30]
+#+startup: overview

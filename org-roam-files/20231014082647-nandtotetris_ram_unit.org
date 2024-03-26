@@ -1,0 +1,27 @@
+:PROPERTIES:
+:ID:       39bc2999-1ab0-4b17-84b0-a253e08916f3
+:END:
+#+title: NandToTetris RAM Unit
+#+date: [2023-10-14 Sa 08:26]
+#+startup: overview
+
+* RAM
+- to memorize
+  - Data
+  - Instructions
+* RAM abstraction/RAM unit
+- Random-Access-Unit
+  - same access time for whatever register
+  - not important which one is adressed, it takes the same time
+
+- A sequence of /n/ addressable registers, with addresses 0 t o n-1
+- _at any given point of time_, only /one/ register in the RAM is selected
+- addresses are encoded via log_2_n bits
+- RAM is sequential (clocked behavior)
+* Read
+1. set /adress = i/
+2. out emits the state of /Register/
+* Write
+1. set /address = i/
+2. set /in = v/
+3. set /load=1/

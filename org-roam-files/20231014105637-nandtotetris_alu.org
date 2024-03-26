@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f470b0f9-0560-4b30-896a-62b257814f8d
+:END:
+#+title: NandToTetris Hack ALU
+#+date: [2023-10-14 Sa 10:56]
+#+startup: overview
+
+[[file:~/workspace/from-nand-to-tetris/nand2tetris/projects/02/ALU.hdl::CHIP ALU {][File: ALU inside NandToTetris project]]
+* Diagram
+[[file:Images/NandToTetris/Hack_ALU.png]]
+* Truth Table
+[[file:Images/NandToTetris/TruthTableHackALU.png]]

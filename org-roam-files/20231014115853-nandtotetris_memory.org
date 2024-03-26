@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       555bcbd2-cf92-4682-9fe4-e40109e56e0f
+:END:
+#+title: NandToTetris Memory
+#+date: [2023-10-14 Sa 11:58]
+#+startup: overview
+
+* Categories of Memories
+- Main memory: RAM,...
+- Secondary memory: disks, ROM, Flash
+- Volatile/non-volatile
+  - erased/non-erased
+* [[id:5cac3bf6-0efa-4d83-b83b-3a1eb69ab00c][NandToTetrisRam]]
+* [[id:79edffa4-b49a-468b-a27f-e19153c6a69d][ROM]]
+* [[id:11c29bf0-0279-4ccb-af6e-1fb73b169de5][Flash memory]]
+* [[id:8106f754-748f-4aa9-bede-b693a73a9ec4][Cache Memory]]
+* Chips
+[[id:8ffb0f19-9b92-4160-84e9-6e833a339b69][NandToTetris Chips Week 3]]

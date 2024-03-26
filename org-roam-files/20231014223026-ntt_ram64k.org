@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       8df42793-203f-4742-baf3-e2b9c9aa18b6
+:END:
+#+title: NTT RAM64K
+#+date: [2023-10-14 Sa 22:30]
+#+startup: overview

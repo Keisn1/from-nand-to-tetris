@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       48cd71b9-eadc-4e7e-a693-01eb94d551e7
+:END:
+#+title: Hack computer
+#+date: [2023-10-30 Mo 18:49]
+#+startup: overview
+
+* [[id:6ecd4e13-b3b4-4707-823c-4f19c801cd13][Hack computer Hardware]]
+* [[id:8c863fbb-89ed-46e2-9e6f-2fafdbb44832][Software]]
+* Control
+** Basic flow
+1.  ROM is loaded with Hack program
+2.  Reset button is pushed
+3.  Program starts running

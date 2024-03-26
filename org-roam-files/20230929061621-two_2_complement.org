@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       0d0ac9a6-6fb2-42f1-a306-68c65965192c
+:END:
+#+title: two 2 complement
+#+date: [2023-09-29 Fr 06:16]
+
+way to represent negative numbers
+Depending on max_value=2**n
+-x = max_value - x
+In machine it is easier to compute it As
+-x = max_value - x = 1 + (2**n - 1) - x
+2**n - 1 = (11..11)_n
+2**n - 1 - x = Not(x)
+than only add 1
+
+Extremely dangerous because of overflow
+The result of an addition is only correct up to modulo 2**n
+Therefore [[id:dccecf1b-dbb6-4ead-82b8-88176101b030][substraction_in_two_2_complement]] is working by letting go of overflow bit, but also source of danger

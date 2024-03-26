@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       8c863fbb-89ed-46e2-9e6f-2fafdbb44832
+:END:
+#+title: Hack Machine Language (hack software)
+#+date: [2023-10-30 Mo 18:59]
+#+startup: overview
+
+([[id:87faf1f0-3d18-4f0d-9903-bd92f853b870][Machine Languages]])
+* Hack is case sensitive!!!
+* Use Trace Tables!!!
+* Hack program
+- sequence of instructions written in the Hack machine language
+- white space is permitted
+- comments
+* [[id:f955aa77-da0a-41ed-8566-ca1f2012816e][Working with registers and memory]]
+* [[id:64a0d649-f83b-43f1-9c8c-af60ed14f0a1][Branching]]
+* [[id:646a0081-5536-4459-b9d8-e78c529ded2d][Hack variables]]
+* [[id:bf1a3643-6e78-447b-878c-c33684a4847e][Hack iteration]]
+* [[id:a5a45623-8bea-4e48-bd70-9bc89e7fe3f8][Hack assembly]]

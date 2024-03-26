@@ -1,0 +1,97 @@
+:PROPERTIES:
+:ID:       5e75ea34-fbf1-4a6b-8dc9-32d5a6ae2962
+:END:
+#+title: Hack computer C instruction
+#+date: [2023-10-30 Mo 20:00]
+#+startup: overview
+
+* Syntax ~dest = comp ; jump~ (destination = computation + jump-directive) (/dest/ and /jump/ are optional)
+1. compute something
+
+2. then
+   - store result of a computation inside some destination
+   - or
+   - use computation to decide if we want to jump
+
+** comp
+| comp   |        |    |    |    |    |    |    |
+|--------+--------+----+----+----+----+----+----|
+| a=0    | a=1    | c1 | c2 | c3 | c4 | c5 | c6 |
+|--------+--------+----+----+----+----+----+----|
+| 0      |        |  1 |  0 |  1 |  0 |  1 |  0 |
+| 1      |        |  1 |  1 |  1 |  1 |  1 |  1 |
+| -1     |        |  1 |  1 |  1 |  0 |  1 |  0 |
+| D      |        |  0 |  0 |  1 |  1 |  0 |  0 |
+| A      | M      |  1 |  1 |  0 |  0 |  0 |  0 |
+| !D     |        |  0 |  0 |  1 |  1 |  0 |  1 |
+| !A     | !M     |  1 |  1 |  0 |  0 |  0 |  1 |
+| -D     |        |  0 |  0 |  1 |  1 |  1 |  1 |
+| -A     | -M     |  1 |  1 |  0 |  0 |  1 |  1 |
+| D+1    |        |  0 |  1 |  1 |  1 |  1 |  1 |
+| A+1    | M+1    |  1 |  1 |  0 |  1 |  1 |  1 |
+| D-1    |        |  0 |  0 |  1 |  1 |  1 |  0 |
+| A-1    | M-1    |  1 |  1 |  0 |  0 |  1 |  0 |
+| D+A    | D+M    |  0 |  0 |  0 |  0 |  1 |  0 |
+| D-A    | D-M    |  0 |  1 |  0 |  0 |  1 |  1 |
+| A-D    | M-D    |  0 |  0 |  0 |  1 |  1 |  1 |
+| D&A    | D&M    |  0 |  0 |  0 |  0 |  0 |  0 |
+| D(or)A | D(or)M |  0 |  1 |  0 |  1 |  0 |  1 |
+
+** dest (destination)
+| null | M | D | MD | A | AM | AD | AMD | (M refers to RAM[A]) |
+|------+---+---+----+---+----+----+-----+----------------------|
+|    0 | 0 | 0 |  0 | 1 |  1 |  1 |   1 |                      |
+|    0 | 0 | 1 |  1 | 0 |  0 |  1 |   1 |                      |
+|    0 | 1 | 0 |  1 | 0 |  1 |  0 |   1 |                      |
+
+** jump (to ROM[A])
+- comparison always to 0
+
+- jumping meaning to jump to line number
+
+- unconditional jump
+|    null |          JGT |      JEQ |          JGE |        JLT |       JNE |         JLE |                JMP |
+|         | greater than |    equal | greater than | lower than | not equal | lower equal |                    |
+|---------+--------------+----------+--------------+------------+-----------+-------------+--------------------|
+| no jump |     if out>0 | if out=0 |    if out>=0 |   if out<0 | if out!=0 |   if out<=0 | unconditional jump |
+|---------+--------------+----------+--------------+------------+-----------+-------------+--------------------|
+|       0 |            0 |        0 |            0 |          1 |         1 |           1 |                  1 |
+|       0 |            0 |        1 |            1 |          0 |         0 |           1 |                  1 |
+|       0 |            1 |        0 |            1 |          0 |         1 |           0 |                  1 |
+
+* binary syntax
+1. 1 ... op code (operation code)
+2. 2 bits that are not used, set to 11
+3. 7 bits (*comp bits*) of computation to be acheived (e.g. a c1 c2 c3 c4 c5 c6) - control bits that will be sent to the ALU
+4. 3 bits representing *destination*
+5. 3 bits representing *jump bits*
+
+|       1 |       11 | a c1 c2 c3 c4 c5 c6 | d1 d2 d3  | j1 j2 j3  |
+|---------+----------+---------------------+-----------+-----------|
+| op code | not used | comp bits           | dest bits | jump bits |
+
+* Semantics
+1. compute the value of ~comp~
+2. store the result in ~dest~
+3. if the boolean expression (~comp~ ~jump~ ~0~) is true, jump to execute the insruction stored in ROM[A]
+
+* Examples
+** Example1
+#+begin_src
+// set the D register to -1
+D=-1
+#+end_src
+
+** Example2
+#+begin_src
+// set the RAM[300] to the value of the D register minus 1
+@300
+M=D-1
+#+end_src
+
+** Example3
+#+begin_example
+// If (D-1==0) jump to execute the instruction stored in ROM[56]
+@56 // A=56
+D-1; JEQ
+#+end_example

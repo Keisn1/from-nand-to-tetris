@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       4531ae96-e5ca-411e-bee5-7ba4fcce3908
+:END:
+#+title: Machine language adressing and memory
+#+date: [2023-10-30 Mo 15:52]
+#+startup: overview
+
+How to know which values to work on?
+
+* Accessing memory is an expensive operation
+- Need to supply a long address
+- Getting the memory contents into the CPU takes time
+  - compared to Operation itself
+
+* [[id:21aeb2b8-b9b1-477a-adda-f673c58c8ed9][Memory hierarchy]]
+* [[id:daf3877d-6c9f-494e-bd7e-cdea797a88a6][Addressing modes]]
+* [[id:197f1a13-d9ed-44fc-a458-e944cc5296de][NandToTetris Input/output]]

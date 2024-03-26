@@ -1,0 +1,6 @@
+:PROPERTIES:
+:ID:       bdc6ab2d-c2a3-470b-81aa-caf18dd58fe5
+:END:
+#+title: NTT RAM64
+#+date: [2023-10-14 Sa 20:24]
+#+startup: overview

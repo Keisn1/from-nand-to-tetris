@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       8dc0b4a6-a88b-4472-800b-3a26a74d82b5
+:END:
+#+title: Built-in symbols
+#+date: [2024-01-25 Thu 12:15]
+#+startup: overview
+
+- R0 ... R15 (virtual registers)
+  - values 0 to 15
+  - to denote virtual registers
+  - also solution to disconcerting fact that @value is used in a double-sense; also don't know what programmer wants to do without knowing the next line
+  - when you use R0 to R15, you're saying that you're going to do something with the register at 0 to 15
+- SCREEN ... base address (16384)
+- KBD ... base address (24576)
+- SP = 0
+- LCL = 1
+- ARG = 2
+- THIS = 3
+- THAT = 4
+  - used in the implementation of the Hack /virtual machin/ (discussed in [[id:e0f2fef8-8acd-4b73-8903-980dfd8a3d36][NandToTetris]]2)

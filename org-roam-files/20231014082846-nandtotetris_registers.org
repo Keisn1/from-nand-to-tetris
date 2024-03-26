@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       6af8df56-f298-4f74-90f4-c3bc8af0ea49
+:END:
+#+title: NandToTetris Registers
+#+date: [2023-10-14 Sa 08:28]
+#+startup: overview
+
+* types of Registers
+** Data registers
+- "Add R1,R2" (add value of R1 to value in R2)
+** Address Registers
+- ~Store R1,@A~ (Store value in R1 into Register specified by A)
+
+* [[id:daf3877d-6c9f-494e-bd7e-cdea797a88a6][Addressing modes]]
+* [[id:7425c6d3-a86d-4828-9448-86c2459150b7][Hack computer registers]]

@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       646a0081-5536-4459-b9d8-e78c529ded2d
+:END:
+#+title: Hack variables
+#+date: [2024-01-25 Thu 12:40]
+#+startup: overview
+
+- only one variable type
+- single regisers are used to represent variables
+
+* Syntax
+- ~@temp~
+  - find some available memory register (say register n)
+    and use it to represent the variable temp
+  - so, from now on, each occurance of @temp in the program will be translated into @n
+- makes it also "portable" to different address space
+* Example
+** Flip
+[[file:images/hack_variables.png]]

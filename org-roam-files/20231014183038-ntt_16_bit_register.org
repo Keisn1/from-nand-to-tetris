@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       f7797379-0146-437a-a591-b79c789c5e34
+:END:
+#+title: NTT 16-bit Register
+#+date: [2023-10-14 Sa 18:30]
+#+startup: overview
+
+[[file:~/workspace/from-nand-to-tetris/nand2tetris/projects/03/a/Register.hdl::}]]

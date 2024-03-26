@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       904a1103-041e-4ae9-84d6-525267dc43c5
+:END:
+#+title: Memory Mapping
+#+date: [2023-10-30 Mo 18:38]
+#+startup: overview
+
+- way of abstract [[id:197f1a13-d9ed-44fc-a458-e944cc5296de][Input/output]]
+- e.g.:
+  - memory Location 12345 holds the direction of the last movement of the mouse
+  - 45678 is not a real memory location but a way tell the printer which paper to use

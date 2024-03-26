@@ -1,0 +1,16 @@
+:PROPERTIES:
+:ID:       64a0d649-f83b-43f1-9c8c-af60ed14f0a1
+:END:
+#+title: Branching
+#+date: [2024-01-25 Thu 12:17]
+#+startup: overview
+
+(if else statements)
+- tell computer to evaluate expression under specific condition
+
+* GOTO
+[[file:images/Branchingexample.png]]
+* Symbolic References
+[[file:images/BranchingReferences.png]]
+* Transpiler
+[[file:images/transpile_references.png]]

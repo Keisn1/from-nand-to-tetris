@@ -1,0 +1,7 @@
+:PROPERTIES:
+:ID:       a065d86c-37a0-43a0-b67b-b1cee9747f95
+:END:
+#+title: NandToTetris HDL
+#+date: [2023-10-14 Sa 15:31]
+#+startup: overview
+* [[id:1adf8ea7-e94c-48f4-a769-ecba0c95bad3][NTT HDL multiple outputs]]

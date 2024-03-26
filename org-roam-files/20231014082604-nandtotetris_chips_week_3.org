@@ -1,0 +1,31 @@
+:PROPERTIES:
+:ID:       8ffb0f19-9b92-4160-84e9-6e833a339b69
+:END:
+#+title: NandToTetris Chips Week 3
+#+date: [2023-10-14 Sa 08:26]
+#+startup: overview
+
+* [[id:505389fd-73bb-421f-b795-2e0a68536c85][NTT 1-bit Register]]
+* [[id:f7797379-0146-437a-a591-b79c789c5e34][NTT 16-bit Register]]
+* higher RAMs
+** Chips
+| chip_name |     n |  k |
+|-----------+-------+----|
+| RAM8      |     8 |  3 |
+| RAM64     |    64 |  6 |
+| RAM512    |   512 |  9 |
+| RAM4K     |  4096 | 12 |
+| RAM16K    | 16384 | 14 |
+** Tips
+- stacking Rams together
+- think about RAM's address input as consiting of 2 fields
+  - one field to select a RAM-part
+  - other field to select a register within that RAM-part
+** [[id:dc12fcf4-1401-48f1-9e9f-34dde72aaabc][NandToTetris 8-Register RAM]]
+** [[id:bdc6ab2d-c2a3-470b-81aa-caf18dd58fe5][NTT RAM64]]
+** [[id:fb76f267-2604-4ce9-b77c-b708fb8d4fb2][NTT RAM512]]
+** [[id:32757f90-756c-42f0-8bb7-a2b0e3c661bf][NTT RAM4K]]
+** [[id:8df42793-203f-4742-baf3-e2b9c9aa18b6][NTT RAM64K]]
+
+* Counter (Program Counter)
+[[id:6091f460-a5ba-4182-bdd2-4a4a0d5c2d24][NandToTetris Counters]]

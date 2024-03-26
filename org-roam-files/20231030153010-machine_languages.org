@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       87faf1f0-3d18-4f0d-9903-bd92f853b870
+:END:
+#+title: Machine Languages
+#+date: [2023-10-30 Mo 15:30]
+#+startup: overview
+
+* What it is?
+** Specification of Hardware/Software Interface
+*** supported operations?
+*** What they operate on?
+*** How is the program controlled
+** Usually in close correspondence to actual Hardware Architecture
+** Cost-Performance Tradeoff
+- more sophisticated operations?
+- more bigger datatypes?
+- time for operations?
+* Elements
+** [[id:d56ccefd-ff02-4719-9709-67917ed81234][Machine language operations]]
+** [[id:4531ae96-e5ca-411e-bee5-7ba4fcce3908][Machine language adressing and memory]]
+** [[id:ff93cbc3-e8cb-4c98-90f7-a404d001b944][NandToTetris Flow Control]]
+* [[id:952af543-8ed7-4121-85f2-6c63e5679f45][Mnemonics]]
+** Instructions are sequences of bits - Assembly
+- Instruction:
+| 0100010 |          0011 | 0010 |
+|     Add | R3(register3) |   R2 |
+** Assembler language allows for naming of memory locations
+* [[id:197f1a13-d9ed-44fc-a458-e944cc5296de][NandToTetris Input/output]]

@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       bf1a3643-6e78-447b-878c-c33684a4847e
+:END:
+#+title: Hack iteration
+#+date: [2024-01-25 Thu 12:48]
+#+startup: overview
+
+
+* Use Trace Tables!!!
+* Example
+** Variable declaration
+[[file:images/variable_declarations_in_iterative_processing_example.png]]
+** Complete translation
+[[file:images/iterative_process.png]]
+* Best practice
+1. Pseudo Code
+2. Translate to Hack language
+3. test the program on paper
