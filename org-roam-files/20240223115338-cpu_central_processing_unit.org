@@ -1,0 +1,45 @@
+:PROPERTIES:
+:ID:       6f86fa94-4be1-49f8-92c2-c18fd1b4b811
+:END:
+#+title: CPU Central processing unit
+#+date: [2024-02-23 Fri 11:53]
+#+startup: overview
+
+- Registers
+- ALU
+
+- where calculations are made
+- where decision of which next instructions is going to be executed
+
+* Does 2 things
+** Given an instruction, it will execute the instruction
+** Can figure out, which instruction to do next
+* Inputs
+** [[id:7bac8f3e-14ee-45bf-808f-74796b46fcfc][Data memory]]
+- inM
+- data value
+- value of currently selected data memory register
+- value that the cpu is operating on
+- at any given point, there is always a selected register in the data memory
+** Instruction ([[id:cadb2fc2-260c-4516-afea-0c79d241da1f][Program memory]])
+- instruction
+- value of currently selected instruction memory register
+- at any given point, there is always a selected register in the instruction memory
+** Reset
+- from user
+* Outputs
+** outM
+- what we want to write
+** addressM
+- where we want to write it
+** writeM (1 or 0)
+- where to write it
+- enabling write operations
+** pc
+- address of next instruction to be fetched and executed
+* Diagram
+:PROPERTIES:
+:ID:       be3f3f6b-c607-41b7-93d0-21a7802292ab
+:END:
+[[file:images/CPU_conceptional.png]]
+* [[id:de084460-cdf1-4524-9b81-543a22eb7609][CPU hack implementation]]

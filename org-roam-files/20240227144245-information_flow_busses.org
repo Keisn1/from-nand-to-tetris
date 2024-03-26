@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       d2609cee-5c5b-426f-8e09-2419fee2ade9
+:END:
+#+title: Information flow (busses)
+#+date: [2024-02-27 Tue 14:42]
+#+startup: overview
+
+[[file:images/InformationFlowVonNeumann.png]]
+* [[id:fe0b3c1e-6cf9-4fb2-830b-6f075c542957][Data information flow (Data bus)]]
+* [[id:f63e4028-cf7b-41da-8fdf-0f97389ec604][Address information flow (address bus)]]
+* [[id:de29275a-9f1e-41d0-98a4-911de2ebb16f][Control information flow (controlbits, control bus, control wires)]]

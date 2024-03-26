@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       e0c4272d-b19e-40ae-8da6-caf66cade700
+:END:
+#+title: Fetch-execute cycle
+#+date: [2024-02-23 Fri 11:52]
+#+startup: overview
+
+* Basic [[id:6f86fa94-4be1-49f8-92c2-c18fd1b4b811][CPU]] loop
+1. Fetch instruction to be executed ([[id:1385b2ae-1dd3-4614-9824-a1419c78a194][Fetching]])
+2. Execute the instruction

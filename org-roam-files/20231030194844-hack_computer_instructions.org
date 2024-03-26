@@ -16,7 +16,8 @@ Addressing Instructions
 
 * Semantics
 - sets the A register to /value/
-- *Side effect*: RAM[A] becomes the select RAM register ([[id:483a3830-7d64-4df4-bc7a-1c267ad0a5c4][M register (RAM register)]])
+- *Side effect*: RAM[A] becomes the select RAM register, which value is accessible via M ([[id:483a3830-7d64-4df4-bc7a-1c267ad0a5c4][M register (RAM register)]])
+
 * Example
 ~@21~
 - sets the A register to 21 (store address into A)
@@ -31,3 +32,4 @@ Addressing Instructions
 @100 // A=100
 M=-1 // RAM[100]=-1
 #+end_src
+* [[id:764a4ffb-8aa0-4bc1-bdca-d6cdd06cdf89][Handling of A-instruction]]

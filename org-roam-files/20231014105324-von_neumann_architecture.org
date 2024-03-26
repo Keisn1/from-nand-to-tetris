@@ -6,11 +6,21 @@
 #+startup: overview
 
 *1945*
+Architecture of universal computer
+* Elements
+[[file:images/elementsVonNeumannArchitecture.png]]
+
+** CPU
+*** [[id:7f44e05c-18fe-4ab3-883f-a3868de1591a][ALU Arithmetic Logic Unit]]
+*** [[id:6af8df56-f298-4f74-90f4-c3bc8af0ea49][Registers]]
+** [[id:555bcbd2-cf92-4682-9fe4-e40109e56e0f][Memory]]
+- part that stores program
+- part that stores the data
+* [[id:d2609cee-5c5b-426f-8e09-2419fee2ade9][Information flow]]
+* [[id:e0c4272d-b19e-40ae-8da6-caf66cade700][Fetch-execute cycle]]
 * Diagram
 [[file:Images/NandToTetris/VonNeumannArchitecture.png]]
 * Input
 * Memory
-* CPU
-** [[id:7f44e05c-18fe-4ab3-883f-a3868de1591a][ALU Arithmetic Logic Unit]], [[id:f470b0f9-0560-4b30-896a-62b257814f8d][NandToTetris Hack ALU]]
-** Control
+* [[id:6f86fa94-4be1-49f8-92c2-c18fd1b4b811][CPU Central processing unit]]
 * Output

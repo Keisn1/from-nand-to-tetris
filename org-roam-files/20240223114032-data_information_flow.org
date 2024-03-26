@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       fe0b3c1e-6cf9-4fb2-830b-6f075c542957
+:END:
+#+title: Data information flow (data bus)
+#+date: [2024-02-23 Fri 11:40]
+#+startup: overview
+
+Databus
+- connected to
+  - [[id:7f44e05c-18fe-4ab3-883f-a3868de1591a][ALU Arithmetic Logic Unit]]
+  - [[id:6af8df56-f298-4f74-90f4-c3bc8af0ea49][Registers]]
+  - [[id:555bcbd2-cf92-4682-9fe4-e40109e56e0f][NandToTetris Memory]]

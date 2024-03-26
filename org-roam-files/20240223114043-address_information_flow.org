@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       f63e4028-cf7b-41da-8fdf-0f97389ec604
+:END:
+#+title: Address information flow (address bus)
+#+date: [2024-02-23 Fri 11:40]
+#+startup: overview
+
+- connected to
+  - [[id:f63e4028-cf7b-41da-8fdf-0f97389ec604][Address information flow (address bus)]]
+  - [[id:555bcbd2-cf92-4682-9fe4-e40109e56e0f][NandToTetris Memory]]

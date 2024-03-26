@@ -1,7 +1,0 @@
-:PROPERTIES:
-:ID:       bcdf1405-6358-49a0-8c3a-8d00d0faf065
-:END:
-#+title: Hack programming
-#+date: [2024-01-24 Wed 21:21]
-#+startup: overview
-

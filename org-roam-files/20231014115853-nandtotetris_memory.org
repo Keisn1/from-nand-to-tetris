@@ -16,3 +16,5 @@
 * [[id:8106f754-748f-4aa9-bede-b693a73a9ec4][Cache Memory]]
 * Chips
 [[id:8ffb0f19-9b92-4160-84e9-6e833a339b69][NandToTetris Chips Week 3]]
+* [[id:7bac8f3e-14ee-45bf-808f-74796b46fcfc][Data memory]]
+* [[id:cadb2fc2-260c-4516-afea-0c79d241da1f][Program memory]]

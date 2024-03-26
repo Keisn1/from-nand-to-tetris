@@ -6,10 +6,7 @@
 #+startup: overview
 
 [[id:6af8df56-f298-4f74-90f4-c3bc8af0ea49][NandToTetris Registers]]
-* D register
-- holds 16-bit value
-  - value
-
+* [[id:0ccbabc0-f195-4627-b31b-b124a21330bb][D register]]
 * A register
 :PROPERTIES:
 :ID:       214d7233-a7ea-483f-99dc-90c29db299f0

@@ -6,7 +6,7 @@
 #+startup: overview
 
 - only one variable type
-- single regisers are used to represent variables
+- single registers are used to represent variables
 
 * Syntax
 - ~@temp~

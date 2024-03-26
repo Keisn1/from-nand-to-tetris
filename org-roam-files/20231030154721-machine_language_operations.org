@@ -10,7 +10,6 @@
   - arithmetics
   - Logical operations
   - Flow control
-
 * Difference between machine languages
 - richness of operations (divisions? bulk copy?)
 - data types (width, floating point...)

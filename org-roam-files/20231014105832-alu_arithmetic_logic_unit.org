@@ -15,3 +15,6 @@
 ** [[id:e7d8bce5-b6b7-4d7a-a1cc-781d92b1529a][Full adder]]
 ** [[id:14860e9f-c81c-4dd8-bac0-0f533a2816be][16Add]]
 ** [[id:1159bc81-01dd-4b16-a576-ad1509404ff5][16bitIncrementer]]
+* Connection to databuses
+- [[id:fe0b3c1e-6cf9-4fb2-830b-6f075c542957][Data bus]]
+- [[id:de29275a-9f1e-41d0-98a4-911de2ebb16f][Control bus]]

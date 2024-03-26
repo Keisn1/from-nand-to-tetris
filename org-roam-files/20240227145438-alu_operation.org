@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       40c064b1-0636-4cfd-845a-05192e47cfc1
+:END:
+#+title: ALU operation
+#+date: [2024-02-27 Tue 14:54]
+#+startup: overview
+
+* input
+- from D-register
+- from A-register, or M-register
+** before ALU
+- instruction ([[id:f8cc3a02-23fd-4eae-8dea-145d64338cc7][Hack computer A instruction]] or [[id:5e75ea34-fbf1-4a6b-8dc9-32d5a6ae2962][Hack computer C instruction]])
+- inM (M register input)
+* What ALU does
+- alu has 6 control bits which tells the operation to be carried out
+* [[id:110ddb7a-ca1a-4299-a2e8-82585dae133d][ALU operation C-instruction]]
+* Output
+- fed everywhere
+  - D-register
+  - A-register
+  - M-register

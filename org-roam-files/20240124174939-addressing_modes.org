@@ -11,10 +11,8 @@
 * Direct
 - directly writing to Memory, by also accessing it
 - add R1 to M[200]
-
 * indirect
 - addressing memory indirectly through the address stored somewhere
 - add R1 @A, memory not specified but written somewhere
-
 * Immediate
 - Add 73, R1 ... constant is part of the instruction

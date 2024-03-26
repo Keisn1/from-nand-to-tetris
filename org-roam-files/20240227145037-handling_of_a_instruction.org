@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       764a4ffb-8aa0-4bc1-bdca-d6cdd06cdf89
+:END:
+#+title: Handling of A-instruction
+#+date: [2024-02-27 Tue 14:50]
+#+startup: overview
+
+1. A instruction arrives
+   - @3001 (*0* 00101110111001)
+   - seeks to load value 3001 into the A-register
+2. Decode instruction into ~op-code~ + 15-bit value
+3. stores the value into A-register
+4. Outputs the value (not shown in diagram) ([[id:be3f3f6b-c607-41b7-93d0-21a7802292ab][Diagram CPU outM output]])
+[[file:images/A-instruction-handling.png][A-instruction-handling diagram]]

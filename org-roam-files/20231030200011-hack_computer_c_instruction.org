@@ -46,10 +46,9 @@
 
 ** jump (to ROM[A])
 - comparison always to 0
-
 - jumping meaning to jump to line number
-
 - unconditional jump
+
 |    null |          JGT |      JEQ |          JGE |        JLT |       JNE |         JLE |                JMP |
 |         | greater than |    equal | greater than | lower than | not equal | lower equal |                    |
 |---------+--------------+----------+--------------+------------+-----------+-------------+--------------------|
@@ -73,7 +72,7 @@
 * Semantics
 1. compute the value of ~comp~
 2. store the result in ~dest~
-3. if the boolean expression (~comp~ ~jump~ ~0~) is true, jump to execute the insruction stored in ROM[A]
+3. if the boolean expression (~comp~ ~jump~ ~0~) is true, jump to execute the instruction stored in ROM[A]
 
 * Examples
 ** Example1
@@ -95,3 +94,4 @@ M=D-1
 @56 // A=56
 D-1; JEQ
 #+end_example
+* [[id:b96f16e6-879d-4661-97a9-935cb602321a][Handling of C-instruction]]

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       1385b2ae-1dd3-4614-9824-a1419c78a194
+:END:
+#+title: Fetching
+#+date: [2024-02-23 Fri 11:54]
+#+startup: overview
+
+- where is next instruction located at?
+  - in the program memory
+  - in the address specified by program counter [[id:6091f460-a5ba-4182-bdd2-4a4a0d5c2d24][NandToTetris Counters]]
+
+- put location of next instruction into address of program memory
+- read content of the memory
+- usually in a sequential manner (one after the other, 8 after 7 for example)
+
+- Flow
+  1. manipulate [[id:6091f460-a5ba-4182-bdd2-4a4a0d5c2d24][Program Counters]] (via [[id:fe0b3c1e-6cf9-4fb2-830b-6f075c542957][Data information flow (data bus)]])
+  2. will hold address of next instruction
+  3. output feeds into [[id:f63e4028-cf7b-41da-8fdf-0f97389ec604][Address information flow (address bus)]] of [[id:cadb2fc2-260c-4516-afea-0c79d241da1f][Program memory]]
+  4. instruction is output from the [[id:cadb2fc2-260c-4516-afea-0c79d241da1f][Program memory]]
+
+[[file:images/FetchingNewInstruction.png]]

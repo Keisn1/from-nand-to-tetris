@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       de29275a-9f1e-41d0-98a4-911de2ebb16f
+:END:
+#+title: Control information flow
+#+date: [2024-02-23 Fri 11:40]
+#+startup: overview
+
+- controlbits, control bus, control wires

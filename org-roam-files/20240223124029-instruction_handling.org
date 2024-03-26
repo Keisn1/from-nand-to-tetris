@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       2673d501-184a-4883-bda1-9357b6c4323f
+:END:
+#+title: Instruction Handling
+#+date: [2024-02-23 Fri 12:40]
+#+startup: overview
+
+* [[id:764a4ffb-8aa0-4bc1-bdca-d6cdd06cdf89][Handling of A-instruction]]
+* [[id:b96f16e6-879d-4661-97a9-935cb602321a][Handling of C-instruction]]

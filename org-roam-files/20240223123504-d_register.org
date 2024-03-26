@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       0ccbabc0-f195-4627-b31b-b124a21330bb
+:END:
+#+title: D register
+#+date: [2024-02-23 Fri 12:35]
+#+startup: overview
+
+- holds 16-bit value
+  - value
+- usually holds temporary value

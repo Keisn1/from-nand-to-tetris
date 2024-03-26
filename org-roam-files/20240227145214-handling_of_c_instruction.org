@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       b96f16e6-879d-4661-97a9-935cb602321a
+:END:
+#+title: Handling of C-instruction
+#+date: [2024-02-27 Tue 14:52]
+#+startup: overview
+
+* Handling of C-instruction
+1. C-instruction arrives (1110011111010111)
+2. Decoding into 4 fields
+   - 1 .. ~op-code~ tells what kind of instruction
+   - 11 .. ALU control bits
+   - Destination load bits
+   - Jump bits
+3. Will use ALU-output (former outputs) to execute instructions
+[[file:images/C-instruction-handling.png][C-instruction handling diagram]]
+* ALU operation C-instruction
+:PROPERTIES:
+:ID:       110ddb7a-ca1a-4299-a2e8-82585dae133d
+:END:
+- keep in mind:
+  - C-instruction consists of different fields,
+  - ALU always computes something
+- controlbit of multiplexer is one of the bits in the instruction
+**

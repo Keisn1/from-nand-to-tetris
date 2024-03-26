@@ -10,6 +10,6 @@
 - "Add R1,R2" (add value of R1 to value in R2)
 ** Address Registers
 - ~Store R1,@A~ (Store value in R1 into Register specified by A)
-
 * [[id:daf3877d-6c9f-494e-bd7e-cdea797a88a6][Addressing modes]]
 * [[id:7425c6d3-a86d-4828-9448-86c2459150b7][Hack computer registers]]
+* connected to [[id:fe0b3c1e-6cf9-4fb2-830b-6f075c542957][Data bus]] and [[id:f63e4028-cf7b-41da-8fdf-0f97389ec604][Address information flow (address bus)]]

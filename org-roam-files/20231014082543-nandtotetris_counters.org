@@ -1,7 +1,7 @@
 :PROPERTIES:
 :ID:       6091f460-a5ba-4182-bdd2-4a4a0d5c2d24
 :END:
-#+title: NandToTetris Counters
+#+title: NandToTetris Counters (program counter)
 #+date: [2023-10-14 Sa 08:25]
 #+startup: overview
 
