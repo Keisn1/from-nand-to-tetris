@@ -7,13 +7,20 @@
 
 - Registers
 - ALU
+  - where calculations are made
+  - where decision of which next instructions is going to be executed
 
-- where calculations are made
-- where decision of which next instructions is going to be executed
-
-* Does 2 things
-** Given an instruction, it will execute the instruction
-** Can figure out, which instruction to do next
+* Diagrams
+:PROPERTIES:
+:ID:       be3f3f6b-c607-41b7-93d0-21a7802292ab
+:END:
+[[file:images/CPU_conceptional.png]]
+[[file:images/CPU_implementation.png]]
+* Nushell CPU behaviour
+[[file:images/SampleCPUOperations.png]]
+- Instructions including D and A registers
+[[file:images/SampleCPUOperationsJumps.png]]
+- Jump instructions
 * Inputs
 ** [[id:7bac8f3e-14ee-45bf-808f-74796b46fcfc][Data memory]]
 - inM
@@ -37,9 +44,12 @@
 - enabling write operations
 ** pc
 - address of next instruction to be fetched and executed
-* Diagram
-:PROPERTIES:
-:ID:       be3f3f6b-c607-41b7-93d0-21a7802292ab
-:END:
-[[file:images/CPU_conceptional.png]]
+* Elements
+** [[id:7f44e05c-18fe-4ab3-883f-a3868de1591a][ALU Arithmetic Logic Unit]]
+** [[id:214d7233-a7ea-483f-99dc-90c29db299f0][A register]]
+** [[id:0ccbabc0-f195-4627-b31b-b124a21330bb][D register]]
+** [[id:6091f460-a5ba-4182-bdd2-4a4a0d5c2d24][Program counter]]
+** Multiplexer
 * [[id:de084460-cdf1-4524-9b81-543a22eb7609][CPU hack implementation]]
+* Instructions
+- [[id:2673d501-184a-4883-bda1-9357b6c4323f][Instruction Handling (in more detail)]]

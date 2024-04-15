@@ -5,4 +5,5 @@
 #+date: [2024-02-23 Fri 12:05]
 #+startup: overview
 
-- Memory that stores the program writes to [[id:de29275a-9f1e-41d0-98a4-911de2ebb16f][Control bus]] and [[id:fe0b3c1e-6cf9-4fb2-830b-6f075c542957][Data information flow (data bus)]]
+- Memory that stores the program
+- writes to [[id:de29275a-9f1e-41d0-98a4-911de2ebb16f][Control bus]] and [[id:fe0b3c1e-6cf9-4fb2-830b-6f075c542957][Data information flow (data bus)]]

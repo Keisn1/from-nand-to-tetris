@@ -17,7 +17,6 @@
   - value
 - addressing register
   - the address in A determines which register is in M register
-
 * M register (RAM register)
 :PROPERTIES:
 :ID:       483a3830-7d64-4df4-bc7a-1c267ad0a5c4

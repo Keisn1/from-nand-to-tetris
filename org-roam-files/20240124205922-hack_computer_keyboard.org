@@ -13,6 +13,5 @@
 - when keyboard is idle, number in memMap is 0
 - probe contents of the contents of RAM[24576]
 
-* Hack character set
-
+[[file:images/KeyboardMemoryMap.png]]
 [[file:images/Hack-Character-set.png]]

@@ -5,6 +5,8 @@
 #+date: [2024-01-24 Wed 19:05]
 #+startup: overview
 
+[[file:images/Screen_memory_map.png][Screen memory map]]
+
 - Using a Screen Memory Map
 - designated memory area, dedicated to manage a display unit
 - physical display is continuously /refreshed/ from the memory map
@@ -30,4 +32,3 @@
     3. Commit word to the RAM
 
 
-[[file:images/Screen_memory_map.png][Screen memory map]]

@@ -10,11 +10,11 @@
 * Components
 ** Instruction memory (ROM)
 - also a sequence of 16-bit registers
+** CPU
+- performs 16-bit instructions
 ** Data memory (RAM)
 - sequence of 16-bit registers
 - [[id:7425c6d3-a86d-4828-9448-86c2459150b7][Hack computer registers]]
-** CPU
-- performs 16-bit instructions
 ** Instuction bus / data bus /address buses
 - enable to move data
 - highways of 16 lanes, moving chunks of 16 bits

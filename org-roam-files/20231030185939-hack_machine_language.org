@@ -7,7 +7,8 @@
 
 ([[id:87faf1f0-3d18-4f0d-9903-bd92f853b870][Machine Languages]])
 * Hack is case sensitive!!!
-* Use Trace Tables!!!
+* Use Trace Tables!!! (when writing programs)
+- Trace tables are used in computer programming to track the values of variables throughout the execution of a program, making it easier to debug and understand the flow of the program.
 * Hack program
 - sequence of instructions written in the Hack machine language
 - white space is permitted

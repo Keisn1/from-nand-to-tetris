@@ -5,6 +5,21 @@
 #+date: [2024-02-23 Fri 12:04]
 #+startup: overview
 
+* Overall
+[[file:images/DataMemory.png]]
+* RAM
+[[file:images/RAM.png]]
+- built in the previous units
+* Screen
+[[file:images/ScreenChip.png]]
+- regular chip, which has a site effect
+- [[id:353ab57e-9b93-4806-882f-9b26a7cc9372][Hack computer screen]]
+* Keyboard
+[[file:images/KeyboardChip.png]]
+- implemented with single 16-bit register
+- [[id:9e70ae0a-4d44-4272-b80f-d2dbec4f7f34][Hack computer keyboard]]
+- concretely probing memory register 24576
+* MISC
 - Memory that stores the data reads
   - [[id:f63e4028-cf7b-41da-8fdf-0f97389ec604][Address information flow (address bus)]]
   - read/writes to/from [[id:fe0b3c1e-6cf9-4fb2-830b-6f075c542957][Data information flow (data bus)]]
