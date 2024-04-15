@@ -8,5 +8,5 @@
 [[id:27d9c3ed-43d8-4f34-9d83-d71752707b40][Von Neumann architecture]]
 [[id:e0c4272d-b19e-40ae-8da6-caf66cade700][Fetch-execute cycle]]
 [[id:1385b2ae-1dd3-4614-9824-a1419c78a194][Fetching]]
-[[id:de084460-cdf1-4524-9b81-543a22eb7609][CPU hack implementation]]
 [[id:6f86fa94-4be1-49f8-92c2-c18fd1b4b811][CPU Central processing unit]]
+[[id:6ecd4e13-b3b4-4707-823c-4f19c801cd13][Hack computer Hardware]]

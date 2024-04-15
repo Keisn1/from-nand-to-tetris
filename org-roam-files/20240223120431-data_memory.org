@@ -23,3 +23,5 @@
 - Memory that stores the data reads
   - [[id:f63e4028-cf7b-41da-8fdf-0f97389ec604][Address information flow (address bus)]]
   - read/writes to/from [[id:fe0b3c1e-6cf9-4fb2-830b-6f075c542957][Data information flow (data bus)]]
+* project
+- funnel address to the right chip part

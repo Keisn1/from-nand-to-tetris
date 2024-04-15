@@ -40,4 +40,38 @@ CHIP CPU {
 
     PARTS:
     // Put your code here:
+
+    // define: opCode, notOpCode, a, zx, nx, zy, ny, f, no, d1, d2, d3, j1, j2, j3,loadA
+
+    And (a=instruction[15], b=true, out=opCode)
+    Not (in=opCode, out=notOpCode)
+    And(a=instruction[12], b=true, out=a)
+
+    And(a=instruction[11], b=true, out=zx)
+    And(a=instruction[10], b=true, out=nx)
+    And(a=instruction[9], b=true, out=zy)
+    And(a=instruction[8], b=true, out=ny)
+    And(a=instruction[7], b=true, out=f)
+    And(a=instruction[6], b=true, out=no)
+
+    And(a=instruction[5], b=true, out=d1)
+    And(a=instruction[4], b=true, out=d2)
+    And(a=instruction[3], b=true, out=d3)
+
+    And(a=instruction[2], b=true, out=j1)
+    And(a=instruction[1], b=true, out=j2)
+    And(a=instruction[0], b=true, out=j3)
+
+    Or (a=d1, b=notOpCode, out=loadA)
+
+    Mux16 (a=outALU, b=instruction, sel=opCode, out=mux1);
+    ARegister (in=mux1, load=loadA, out=outA, out=addressM);
+
+    Mux16 (a=outA, b=inM, sel=a, out=mux2);
+
+    DRegister (in=outALU, load=d2, out=outD);
+    ALU (x=outD, y=mux2, zx=zx, nx=nx, zy=zy, ny=ny, f=f, no=no, zr=zr, ng=ng, out=outALU);
+
+
+    PC (in=outA, load=, inc=, reset=reset, out=pc);
 }

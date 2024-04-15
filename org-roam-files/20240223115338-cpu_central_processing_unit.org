@@ -5,44 +5,45 @@
 #+date: [2024-02-23 Fri 11:53]
 #+startup: overview
 
-- Registers
-- ALU
-  - where calculations are made
-  - where decision of which next instructions is going to be executed
-
 * Diagrams
 :PROPERTIES:
 :ID:       be3f3f6b-c607-41b7-93d0-21a7802292ab
 :END:
+** CPU conceptional
 [[file:images/CPU_conceptional.png]]
+** CPU implementation
 [[file:images/CPU_implementation.png]]
-* Nushell CPU behaviour
+** Nutshell CPU behaviour
+*** Instructions including D and A registers
 [[file:images/SampleCPUOperations.png]]
-- Instructions including D and A registers
 [[file:images/SampleCPUOperationsJumps.png]]
 - Jump instructions
-* Inputs
-** [[id:7bac8f3e-14ee-45bf-808f-74796b46fcfc][Data memory]]
+* API
+** abstraction
+[[file:images/cpu_abstraction.png]]
+** Inputs
+*** [[id:7bac8f3e-14ee-45bf-808f-74796b46fcfc][Data memory]]
 - inM
 - data value
 - value of currently selected data memory register
 - value that the cpu is operating on
 - at any given point, there is always a selected register in the data memory
-** Instruction ([[id:cadb2fc2-260c-4516-afea-0c79d241da1f][Program memory]])
+*** Instruction ([[id:cadb2fc2-260c-4516-afea-0c79d241da1f][Program memory]])
 - instruction
 - value of currently selected instruction memory register
 - at any given point, there is always a selected register in the instruction memory
-** Reset
+- comes from [[id:79edffa4-b49a-468b-a27f-e19153c6a69d][ROM]]
+*** Reset
 - from user
-* Outputs
-** outM
+** Outputs
+*** outM
 - what we want to write
-** addressM
+*** addressM
 - where we want to write it
-** writeM (1 or 0)
+*** writeM (1 or 0)
 - where to write it
 - enabling write operations
-** pc
+*** pc
 - address of next instruction to be fetched and executed
 * Elements
 ** [[id:7f44e05c-18fe-4ab3-883f-a3868de1591a][ALU Arithmetic Logic Unit]]
@@ -50,6 +51,10 @@
 ** [[id:0ccbabc0-f195-4627-b31b-b124a21330bb][D register]]
 ** [[id:6091f460-a5ba-4182-bdd2-4a4a0d5c2d24][Program counter]]
 ** Multiplexer
-* [[id:de084460-cdf1-4524-9b81-543a22eb7609][CPU hack implementation]]
 * Instructions
 - [[id:2673d501-184a-4883-bda1-9357b6c4323f][Instruction Handling (in more detail)]]
+* Tips
+- all parts are already built Chip-parts
+- use c-control bits, root them to correct destination in the various chip-parts
+  - may need to add some logic, processing of control bits
+  - bare in mind the control bits coming out of the alu

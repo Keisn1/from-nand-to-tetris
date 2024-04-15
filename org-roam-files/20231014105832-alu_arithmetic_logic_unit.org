@@ -6,7 +6,10 @@
 #+startup: overview
 
 * Diagram
-[[file:Images/NandToTetris/ALU_abstraction.png]]
+** Abstraction
+[[file:images/ALU_abstraction.png]]
+** HackALU
+[[file:images/Hack_ALU.png]]
 * Hardware/Software Tradeoff
 - Everything that is not built into hardware, needs to be implemented via Software
 * [[id:f470b0f9-0560-4b30-896a-62b257814f8d][NandToTetris ALU]]

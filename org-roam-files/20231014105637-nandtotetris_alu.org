@@ -7,6 +7,8 @@
 
 [[file:~/workspace/from-nand-to-tetris/nand2tetris/projects/02/ALU.hdl::CHIP ALU {][File: ALU inside NandToTetris project]]
 * Diagram
-[[file:Images/NandToTetris/Hack_ALU.png]]
+[[file:images/Hack_ALU.png]]
 * Truth Table
-[[file:Images/NandToTetris/TruthTableHackALU.png]]
+[[file:images/TruthTableHackALU.png]]
+* zr and ng
+- document if alu output is negative or zero

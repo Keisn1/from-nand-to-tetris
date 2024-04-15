@@ -17,10 +17,4 @@
   - value
 - addressing register
   - the address in A determines which register is in M register
-* M register (RAM register)
-:PROPERTIES:
-:ID:       483a3830-7d64-4df4-bc7a-1c267ad0a5c4
-:END:
-- represents 16-bit RAM register addressed by A
-- at any given point only one register is chosen as M register
-- see [[id:632ee093-4cd0-4b7e-9201-7ff0d17bb5c2][Usage example]]
+* [[id:e6ac5e60-8fc9-44d0-a457-3fc841345c10][M register]] (RAM register)

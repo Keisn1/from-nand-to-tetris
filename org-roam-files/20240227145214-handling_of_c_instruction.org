@@ -22,3 +22,4 @@
   - C-instruction consists of different fields,
   - ALU always computes something
 - controlbit of multiplexer is one of the bits in the instruction
+

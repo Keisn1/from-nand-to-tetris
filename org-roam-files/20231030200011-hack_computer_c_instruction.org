@@ -43,7 +43,7 @@
 |    0 | 0 | 0 |  0 | 1 |  1 |  1 |   1 |                      |
 |    0 | 0 | 1 |  1 | 0 |  0 |  1 |   1 |                      |
 |    0 | 1 | 0 |  1 | 0 |  1 |  0 |   1 |                      |
-
+[[file:images/destintation_syntax.png]]
 ** jump (to ROM[A])
 - comparison always to 0
 - jumping meaning to jump to line number
@@ -57,7 +57,7 @@
 |       0 |            0 |        0 |            0 |          1 |         1 |           1 |                  1 |
 |       0 |            0 |        1 |            1 |          0 |         0 |           1 |                  1 |
 |       0 |            1 |        0 |            1 |          0 |         1 |           0 |                  1 |
-
+[[file:images/jump_syntax.png]]
 * binary syntax
 1. 1 ... op code (operation code)
 2. 2 bits that are not used, set to 11
