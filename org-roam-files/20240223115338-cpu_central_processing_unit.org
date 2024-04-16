@@ -44,7 +44,6 @@
 - where to write it
 - enabling write operations
 *** pc
-- address of next instruction to be fetched and executed
 * Elements
 ** [[id:7f44e05c-18fe-4ab3-883f-a3868de1591a][ALU Arithmetic Logic Unit]]
 ** [[id:214d7233-a7ea-483f-99dc-90c29db299f0][A register]]

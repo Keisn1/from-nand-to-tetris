@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       75356681-533a-4393-965b-57cb781bcd33
+:END:
+#+title: Week 6
+#+date: [2024-04-15 Mon 19:45]
+#+startup: overview
+
+Assembly Languages
+* Loop until Eof
+1. Read next Assembly language command
+2. Break it into the different fields it is composed of
+3. Lookup the binary code for each field
+4. combine theses codes into a single machine language command
+5. output this machine language command

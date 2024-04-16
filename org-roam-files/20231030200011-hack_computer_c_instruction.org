@@ -73,7 +73,6 @@
 1. compute the value of ~comp~
 2. store the result in ~dest~
 3. if the boolean expression (~comp~ ~jump~ ~0~) is true, jump to execute the instruction stored in ROM[A]
-
 * Examples
 ** Example1
 #+begin_src
