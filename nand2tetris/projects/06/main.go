@@ -22,7 +22,8 @@ func FileSave(text, targetFP string) {
 }
 
 type Parser struct {
-	cmds []string
+	cmds       []string
+	cmdCounter int
 }
 
 func NewParser(fp string) *Parser {
@@ -30,15 +31,31 @@ func NewParser(fp string) *Parser {
 	lines := strings.Split(string(content), "\n")
 	var cmds []string
 
+	cmdCounter := 0
 	for _, l := range lines {
 		cmd := strings.TrimSpace(l)
 		if isNotInstruction(cmd) {
 			continue
 		}
+		if isLabelSymbol(cmd) {
+			addToSymbolTable(cmd, cmdCounter)
+			continue
+		}
+
 		cmds = append(cmds, cmd)
+		cmdCounter++
 	}
 
 	return &Parser{cmds: cmds}
+}
+
+func addToSymbolTable(cmd string, cmdCounter int) {
+	symbol := cmd[1 : len(cmd)-1]
+	symbolTable[symbol] = cmdCounter
+}
+
+func isLabelSymbol(cmd string) bool {
+	return cmd[0] == '('
 }
 
 func (p Parser) Parse() string {
@@ -47,16 +64,6 @@ func (p Parser) Parse() string {
 		hackCmds = append(hackCmds, p.ParseCmd(cmd))
 	}
 	return strings.Join(hackCmds, "\n")
-}
-
-func isNotInstruction(cmd string) bool {
-	if len(cmd) == 0 {
-		return true
-	}
-	if cmd[0] == '/' {
-		return true
-	}
-	return false
 }
 
 func parseAInstruction(cmd string) string {
@@ -124,4 +131,14 @@ func (p Parser) ParseCmd(cmd string) string {
 	default:
 		return p.parseCInstruction(cmd)
 	}
+}
+
+func isNotInstruction(cmd string) bool {
+	if len(cmd) == 0 {
+		return true
+	}
+	if cmd[0] == '/' {
+		return true
+	}
+	return false
 }
