@@ -14,8 +14,8 @@ func main() {
 }
 
 func Assemble(target string) {
-	parser := NewParser(target)
-	code := parser.Parse()
+	parser := NewAssembler(target)
+	code := parser.Assemble()
 	FileSave(code, "add/Add.hack")
 }
 
@@ -23,7 +23,8 @@ func FileSave(text, targetFP string) {
 	os.WriteFile("add/Add.hack", []byte(text), 0644)
 }
 
-type Parser struct {
+type Assembler struct {
+	raw        string
 	cmds       []string
 	varCounter int
 }
@@ -38,51 +39,41 @@ func removeWhiteSpace(line string) string {
 	return strings.Join(elems, "")
 }
 
-func removeComments(line string) string {
-	line = strings.Split(line, "//")[0]
-	return line
+func NewAssembler(fp string) *Assembler {
+	content, _ := os.ReadFile(fp)
+	return &Assembler{raw: string(content)}
 }
 
-func NewParser(fp string) *Parser {
-	content, _ := os.ReadFile(fp)
-	var lines []string
-	for _, line := range strings.Split(string(content), "\n") {
-		line = removeWhiteSpace(line)
-		line = removeComments(line)
+func cleanLine(line string) string {
+	line = removeWhiteSpace(line)
+	return removeComments(line)
+}
+
+func (asm *Assembler) FirstPass() {
+	cmdCounter := 0
+	for _, line := range strings.Split(string(asm.raw), "\n") {
+		line = cleanLine(line)
 		if len(line) == 0 {
 			continue
 		}
-		lines = append(lines, line)
-	}
-
-	var cmds []string
-	cmdCounter := 0
-	for _, l := range lines {
-		cmd := strings.TrimSpace(l)
-		if isNotInstruction(cmd) {
+		if isLabelSymbol(line) {
+			addToSymbolTable(line, cmdCounter)
 			continue
 		}
-		if isLabelSymbol(cmd) {
-			addToSymbolTable(cmd, cmdCounter)
-			continue
-		}
-
-		cmds = append(cmds, cmd)
+		asm.cmds = append(asm.cmds, line)
 		cmdCounter++
 	}
-
-	return &Parser{cmds: cmds}
 }
 
-func (p Parser) Parse() string {
+func (asm *Assembler) Assemble() string {
 	var hackCmds []string
-	for _, cmd := range p.cmds {
-		hackCmds = append(hackCmds, p.ParseCmd(cmd))
+	for _, cmd := range asm.cmds {
+		hackCmds = append(hackCmds, asm.TranslateCmd(cmd))
 	}
 	return strings.Join(hackCmds, "\n")
 }
 
-func (p *Parser) parseAInstruction(cmd string) string {
+func (p *Assembler) parseAInstruction(cmd string) string {
 	val := strings.Split(cmd, "@")[1]
 
 	address, ok := symbolTable[val]
@@ -104,7 +95,7 @@ func (p *Parser) parseAInstruction(cmd string) string {
 	return binaryStr
 }
 
-func (p Parser) jump(cmd string) string {
+func (p *Assembler) jump(cmd string) string {
 	if strings.Contains(cmd, ";") {
 		jumpPart := strings.Split(cmd, ";")[1]
 		return jumpTable[jumpPart]
@@ -112,7 +103,7 @@ func (p Parser) jump(cmd string) string {
 	return "000"
 }
 
-func (p Parser) dest(cmd string) string {
+func (p *Assembler) dest(cmd string) string {
 	if strings.Contains(cmd, "=") {
 		destPart := strings.Split(cmd, "=")[0]
 		return destTable[destPart]
@@ -120,7 +111,7 @@ func (p Parser) dest(cmd string) string {
 	return "000"
 }
 
-func (p Parser) comp(cmd string) string {
+func (p *Assembler) comp(cmd string) string {
 	if strings.Contains(cmd, "=") {
 		compString := strings.Split(cmd, "=")[1]
 		if strings.Contains(compString, "M") {
@@ -139,30 +130,19 @@ func (p Parser) comp(cmd string) string {
 		a := "0"
 		return a + compTableWithOutM[compString]
 	}
-
 }
 
-func (p Parser) parseCInstruction(cmd string) string {
-	return "111" + p.comp(cmd) + p.dest(cmd) + p.jump(cmd)
+func (asm *Assembler) parseCInstruction(cmd string) string {
+	return "111" + asm.comp(cmd) + asm.dest(cmd) + asm.jump(cmd)
 }
 
-func (p Parser) ParseCmd(cmd string) string {
+func (asm *Assembler) TranslateCmd(cmd string) string {
 	switch cmd[0] {
 	case '@':
-		return p.parseAInstruction(cmd)
+		return asm.parseAInstruction(cmd)
 	default:
-		return p.parseCInstruction(cmd)
+		return asm.parseCInstruction(cmd)
 	}
-}
-
-func isNotInstruction(cmd string) bool {
-	if len(cmd) == 0 {
-		return true
-	}
-	if cmd[0] == '/' {
-		return true
-	}
-	return false
 }
 
 func addToSymbolTable(cmd string, cmdCounter int) {
@@ -173,3 +153,57 @@ func addToSymbolTable(cmd string, cmdCounter int) {
 func isLabelSymbol(cmd string) bool {
 	return cmd[0] == '('
 }
+
+func removeComments(line string) string {
+	line = strings.Split(line, "//")[0]
+	return line
+}
+
+// func (ci CInstruction) jumpCode(cmd string) string {
+// 	if strings.Contains(cmd, ";") {
+// 		jumpPart := strings.Split(cmd, ";")[1]
+// 		return jumpTable[jumpPart]
+// 	}
+// 	return "000"
+// }
+
+// func (ci CInstruction) destCode(cmd string) string {
+// 	if strings.Contains(cmd, "=") {
+// 		destPart := strings.Split(cmd, "=")[0]
+// 		return destTable[destPart]
+// 	}
+// 	return "000"
+// }
+
+// func (ci CInstruction) compCode(cmd string) string {
+// 	if strings.Contains(cmd, "=") {
+// 		compString := strings.Split(cmd, "=")[1]
+// 		if strings.Contains(compString, "M") {
+// 			a := "1"
+// 			return a + compTableWithM[compString]
+// 		} else {
+// 			a := "0"
+// 			return a + compTableWithOutM[compString]
+// 		}
+// 	}
+// 	compString := strings.Split(cmd, ";")[0]
+// 	if strings.Contains(compString, "M") {
+// 		a := "1"
+// 		return a + compTableWithM[compString]
+// 	} else {
+// 		a := "0"
+// 		return a + compTableWithOutM[compString]
+// 	}
+// }
+
+// type AInstruction struct {
+// 	instruction string
+// 	address     string
+// }
+
+// type CInstruction struct {
+// 	instruction string
+// 	comp        string
+// 	dest        string
+// 	jump        string
+// }

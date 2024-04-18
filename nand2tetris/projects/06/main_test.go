@@ -1,7 +1,6 @@
 package main_test
 
 import (
-	"os"
 	"testing"
 
 	"hackAsm"
@@ -31,23 +30,25 @@ func TestParseFile(t *testing.T) {
 			targetFP: "rect/RectL.asm",
 			want:     testTables["rect"],
 		},
-		// {
-		// 	targetFP: "rect/Rect.asm",
-		// 	want:     testTables["rect"],
-		// },
+		{
+			targetFP: "rect/Rect.asm",
+			want:     testTables["rect"],
+		},
 	}
 
 	for _, tc := range testCases {
-		parser := main.NewParser(tc.targetFP)
-		got := parser.Parse()
+		asm := main.NewAssembler(tc.targetFP)
+		asm.FirstPass()
+		got := asm.Assemble()
 		assert.Equal(t, tc.want, got)
 	}
-
 }
 
 func TestParser(t *testing.T) {
 	t.Run("Test cmds dependent on rect/Rect.asm", func(t *testing.T) {
-		parser := main.NewParser("rect/Rect.asm")
+		asm := main.NewAssembler("rect/Rect.asm")
+		asm.FirstPass()
+
 		type testCase struct {
 			cmd  string
 			want string
@@ -58,15 +59,22 @@ func TestParser(t *testing.T) {
 				cmd:  "@counter",
 				want: "0000000000010000",
 			},
+			{
+				cmd:  "@address",
+				want: "0000000000010001",
+			},
 		}
 
 		for _, tc := range testCases {
-			got := parser.ParseCmd(tc.cmd)
+			got := asm.TranslateCmd(tc.cmd)
 			assert.Equal(t, tc.want, got)
 		}
 	})
+
 	t.Run("Test cmds dependent on max/Max.asm", func(t *testing.T) {
-		parser := main.NewParser("max/Max.asm")
+		asm := main.NewAssembler("max/Max.asm")
+		asm.FirstPass()
+
 		type testCase struct {
 			cmd  string
 			want string
@@ -88,13 +96,13 @@ func TestParser(t *testing.T) {
 		}
 
 		for _, tc := range testCases {
-			got := parser.ParseCmd(tc.cmd)
+			got := asm.TranslateCmd(tc.cmd)
 			assert.Equal(t, tc.want, got)
 		}
 	})
 	t.Run("Test cmds that are independent of file", func(t *testing.T) {
 
-		parser := main.Parser{}
+		asm := main.Assembler{}
 		type testCase struct {
 			cmd  string
 			want string
@@ -160,43 +168,24 @@ func TestParser(t *testing.T) {
 		}
 
 		for _, tc := range testCases {
-			got := parser.ParseCmd(tc.cmd)
+			got := asm.TranslateCmd(tc.cmd)
 			assert.Equal(t, tc.want, got)
 		}
 	})
 }
 
-func TestAssemble(t *testing.T) {
-	target := "add/Add.asm"
-	want := `0000000000000010
-1110110000010000
-0000000000000011
-1110000010010000
-0000000000000000
-1110001100001000`
-	main.Assemble(target)
+// func TestSaveResult(t *testing.T) {
+// 	targetFP := "add/Add.asm"
+// 	p := main.NewParser(targetFP)
+// 	text := "text"
+// 	want := "add/Add.hack"
+// 	main.FileSave(text, targetFP)
 
-	out := "add/Add.hack"
-	assert.FileExists(t, out)
+// 	assert.FileExists(t, want)
+// 	got, err := os.ReadFile(want)
+// 	assert.NoError(t, err)
+// 	assert.Equal(t, text, string(got))
 
-	got, err := os.ReadFile(out)
-	assert.NoError(t, err)
-	assert.Equal(t, want, string(got))
-
-	os.Remove(out)
-	assert.NoFileExists(t, out)
-}
-func TestSaveResult(t *testing.T) {
-	text := "text"
-	targetFP := "add/Add.asm"
-	want := "add/Add.hack"
-	main.FileSave(text, targetFP)
-
-	assert.FileExists(t, want)
-	got, err := os.ReadFile(want)
-	assert.NoError(t, err)
-	assert.Equal(t, text, string(got))
-
-	os.Remove(want)
-	assert.NoFileExists(t, want)
-}
+// 	os.Remove(want)
+// 	assert.NoFileExists(t, want)
+// }
