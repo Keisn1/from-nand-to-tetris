@@ -21,12 +21,23 @@ func TestParseFile(t *testing.T) {
 		},
 		{
 			targetFP: "max/MaxL.asm",
-			want:     testTables["maxL"],
+			want:     testTables["max"],
 		},
+		{
+			targetFP: "max/Max.asm",
+			want:     testTables["max"],
+		},
+		{
+			targetFP: "rect/RectL.asm",
+			want:     testTables["rect"],
+		},
+		// {
+		// 	targetFP: "rect/Rect.asm",
+		// 	want:     testTables["rect"],
+		// },
 	}
 
 	for _, tc := range testCases {
-
 		parser := main.NewParser(tc.targetFP)
 		got := parser.Parse()
 		assert.Equal(t, tc.want, got)
@@ -35,7 +46,26 @@ func TestParseFile(t *testing.T) {
 }
 
 func TestParser(t *testing.T) {
-	t.Run("Test cmds dependent on file", func(t *testing.T) {
+	t.Run("Test cmds dependent on rect/Rect.asm", func(t *testing.T) {
+		parser := main.NewParser("rect/Rect.asm")
+		type testCase struct {
+			cmd  string
+			want string
+		}
+
+		testCases := []testCase{
+			{
+				cmd:  "@counter",
+				want: "0000000000010000",
+			},
+		}
+
+		for _, tc := range testCases {
+			got := parser.ParseCmd(tc.cmd)
+			assert.Equal(t, tc.want, got)
+		}
+	})
+	t.Run("Test cmds dependent on max/Max.asm", func(t *testing.T) {
 		parser := main.NewParser("max/Max.asm")
 		type testCase struct {
 			cmd  string

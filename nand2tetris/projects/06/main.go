@@ -6,6 +6,8 @@ import (
 	"strings"
 )
 
+const varOffset = 16
+
 func main() {
 	target := os.Args[1]
 	Assemble(target)
@@ -23,14 +25,37 @@ func FileSave(text, targetFP string) {
 
 type Parser struct {
 	cmds       []string
-	cmdCounter int
+	varCounter int
+}
+
+func removeWhiteSpace(line string) string {
+	line = strings.TrimSpace(line)
+	splits := strings.Split(line, " ")
+	var elems []string
+	for _, s := range splits {
+		elems = append(elems, strings.TrimSpace(s))
+	}
+	return strings.Join(elems, "")
+}
+
+func removeComments(line string) string {
+	line = strings.Split(line, "//")[0]
+	return line
 }
 
 func NewParser(fp string) *Parser {
 	content, _ := os.ReadFile(fp)
-	lines := strings.Split(string(content), "\n")
-	var cmds []string
+	var lines []string
+	for _, line := range strings.Split(string(content), "\n") {
+		line = removeWhiteSpace(line)
+		line = removeComments(line)
+		if len(line) == 0 {
+			continue
+		}
+		lines = append(lines, line)
+	}
 
+	var cmds []string
 	cmdCounter := 0
 	for _, l := range lines {
 		cmd := strings.TrimSpace(l)
@@ -49,15 +74,6 @@ func NewParser(fp string) *Parser {
 	return &Parser{cmds: cmds}
 }
 
-func addToSymbolTable(cmd string, cmdCounter int) {
-	symbol := cmd[1 : len(cmd)-1]
-	symbolTable[symbol] = cmdCounter
-}
-
-func isLabelSymbol(cmd string) bool {
-	return cmd[0] == '('
-}
-
 func (p Parser) Parse() string {
 	var hackCmds []string
 	for _, cmd := range p.cmds {
@@ -66,12 +82,18 @@ func (p Parser) Parse() string {
 	return strings.Join(hackCmds, "\n")
 }
 
-func parseAInstruction(cmd string) string {
+func (p *Parser) parseAInstruction(cmd string) string {
 	val := strings.Split(cmd, "@")[1]
 
 	address, ok := symbolTable[val]
+	var err error
 	if !ok {
-		address, _ = strconv.Atoi(val)
+		address, err = strconv.Atoi(val)
+		if err != nil {
+			symbolTable[val] = varOffset + p.varCounter
+			p.varCounter++
+			address = symbolTable[val]
+		}
 	}
 
 	binaryStr := strconv.FormatInt(int64(address), 2)
@@ -127,7 +149,7 @@ func (p Parser) parseCInstruction(cmd string) string {
 func (p Parser) ParseCmd(cmd string) string {
 	switch cmd[0] {
 	case '@':
-		return parseAInstruction(cmd)
+		return p.parseAInstruction(cmd)
 	default:
 		return p.parseCInstruction(cmd)
 	}
@@ -141,4 +163,13 @@ func isNotInstruction(cmd string) bool {
 		return true
 	}
 	return false
+}
+
+func addToSymbolTable(cmd string, cmdCounter int) {
+	symbol := cmd[1 : len(cmd)-1]
+	symbolTable[symbol] = cmdCounter
+}
+
+func isLabelSymbol(cmd string) bool {
+	return cmd[0] == '('
 }
