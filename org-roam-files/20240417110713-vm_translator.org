@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       cda90a7e-463e-4c8f-b001-a5fe1f8e0504
+:END:
+#+title: VM translator
+#+date: [2024-04-17 Wed 11:07]
+#+startup: overview
+
+* VM translator perpective
+[[file:images/vm_translator_perspective.png]]

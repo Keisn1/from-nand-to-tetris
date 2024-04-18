@@ -5,6 +5,8 @@
 #+date: [2023-10-30 Mo 20:00]
 #+startup: overview
 
+* Specification
+[[file:images/C-intruction-spec.png]]
 * Syntax ~dest = comp ; jump~ (destination = computation + jump-directive) (/dest/ and /jump/ are optional)
 1. compute something
 

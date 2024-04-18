@@ -1,0 +1,21 @@
+:PROPERTIES:
+:ID:       10ca2929-07a9-48fd-bcb2-87c29de91126
+:END:
+#+title: memory segment commands
+#+date: [2024-04-17 Wed 10:13]
+#+startup: overview
+
+* Variables
+** Kinds of variables
+- introducing different kinds of variables with virtual memory segments
+*** Argument variables
+*** static variables
+*** local variables
+** VM code Without memory segments
+[[file:images/variable_kinds.png]]
+** VM codewith memory segments
+[[file:images/memory_segments.png]]
+[[file:images/memory_segments_2.png]]
+* all memory segments
+[[file:images/all_memory_segments.png]]
+* [[id:55377525-b38d-4ca6-884a-e9ca965164f8][Memory segments implementation]]

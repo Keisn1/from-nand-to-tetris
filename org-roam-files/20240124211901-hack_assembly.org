@@ -4,3 +4,91 @@
 #+title: Hack assembly 
 #+date: [2024-01-24 Wed 21:19]
 #+startup: overview
+
+[[id:8c863fbb-89ed-46e2-9e6f-2fafdbb44832][Hack Machine Language (hack software)]]
+
+* overall assembly logic
+[[file:images/overall_assembly_logic.png]]
+* Assembly program elements
+** WhiteSpace
+- empty lines / indentation
+- line comments
+- in-line comments
+*** Handling
+- ignore them!
+** Instructions
+*** A-instruction
+[[file:images/A_instruction_spec.png]]
+*** C-instruction
+[[file:images/C-intruction-spec.png]]
+**** Example
+- MD=D+1
+- MD: dest-directive
+- D+1: comp-directive
+- null: jump-directive
+- parser chops the line into fields
+**** Pseudo
+1. Init with 3 ones
+2. 7 bits corresponding to comp-field (look tables)
+3. 3 fields correponding to destination
+4. encode value of jump-direcive
+** Symbols
+- References
+- Label declarations
+*** Handling symbols
+**** variable symbols
+- represent memory locations where the programmer wants to maintain values
+- programmer not really concerned about the place in memory
+- each variable is assigned a unique memory address, starting at 16
+[[file:images/handling_variable_symbols.png]]
+**** label symbols
+- represent destinations of Goto commands ([[id:64a0d649-f83b-43f1-9c8c-af60ed14f0a1][Branching]])
+- declared with round paranthesis' (pseudo-commands, not translated in binary)
+- build a table with
+  | symbol | value |
+  |--------+-------|
+  | LOOP   |     4 |
+  | STOP   |    18 |
+  | END    |    22 |
+- @table[Symbol]
+[[file:images/handling_label_symbols.png]]
+
+**** pre-defined symbols
+- represent special memory locations
+- only appear in A-instructions (@SCREEN)
+[[file:images/handling_predefined_symbols.png]]
+* Symbol tables
+[[file:images/symbol_table.png]]
+1. construct empty symbol table
+2. populate with all predefined symbol-value pairs
+3. First pass
+   1. init counter
+   2. Scan for label symbols ("(LOOP)") and increment counter
+4. Second pass
+   1. Add variable to symbol table if seen first time
+   2. lookup variables when encountering them later
+* Whole assembly process
+[[file:images/assembly_process.png]]
+* Architecture
+** design
+[[file:images/assembler_design.png]]
+- may be unit testable, independent modules
+** implementation in stages and testing
+[[file:images/proposed_implementation_assembler.png]]
+| program    |                                   |
+|------------+-----------------------------------|
+| add        | white space/instruction           |
+|            |                                   |
+| MaxL       | wihout symbols                    |
+|            |                                   |
+| Max        | label symbols, predefined symbols |
+|            |                                   |
+| RectangleL | without symbols                   |
+|            |                                   |
+| Rectangle  | with symbols                      |
+|            |                                   |
+| pong       |                                   |
+** testing options
+[[file:images/testing_options.png]]
+*** supplied assembler program has diff
+[[file:images/supplied_assembler.png]]

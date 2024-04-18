@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       1321ad47-53d3-4479-8dd9-bd0b56d1ad88
+:END:
+#+title: week 7
+#+date: [2024-04-17 Wed 09:41]
+#+startup: overview
+
+* [[id:e626a575-ab78-45d0-b865-574cc5d740a9][VM (virtual machine)]]

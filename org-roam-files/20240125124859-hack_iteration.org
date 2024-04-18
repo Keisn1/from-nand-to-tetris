@@ -5,7 +5,6 @@
 #+date: [2024-01-25 Thu 12:48]
 #+startup: overview
 
-
 * Use Trace Tables!!!
 * Example
 ** Variable declaration

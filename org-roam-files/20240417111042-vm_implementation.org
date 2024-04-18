@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       8e0b32fd-f3ac-4480-bdb9-a420d1139180
+:END:
+#+title: VM Implementation
+#+date: [2024-04-17 Wed 11:10]
+#+startup: overview
+
+* [[id:cc835f0a-e752-419b-9329-20c405e29750][Stack Implementation]]
+* [[id:55377525-b38d-4ca6-884a-e9ca965164f8][Memory segments implementation]]

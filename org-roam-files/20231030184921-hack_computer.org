@@ -5,6 +5,8 @@
 #+date: [2023-10-30 Mo 18:49]
 #+startup: overview
 
+- Hack computer is a 16-bit computer
+- specified as a 16-bit number
 * [[id:6ecd4e13-b3b4-4707-823c-4f19c801cd13][Hack computer Hardware]]
 * [[id:8c863fbb-89ed-46e2-9e6f-2fafdbb44832][Software]]
 * Control

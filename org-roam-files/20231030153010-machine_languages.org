@@ -25,4 +25,3 @@
 | 0100010 |          0011 | 0010 |
 |     Add | R3(register3) |   R2 |
 ** Assembler language allows for naming of memory locations
-* [[id:197f1a13-d9ed-44fc-a458-e944cc5296de][NandToTetris Input/output]]

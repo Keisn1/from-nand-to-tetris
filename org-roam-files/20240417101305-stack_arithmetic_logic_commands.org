@@ -1,0 +1,25 @@
+:PROPERTIES:
+:ID:       1c166d79-3f8e-45a0-aa1c-0157e1b08937
+:END:
+#+title: stack arithmetic / logic commands
+#+date: [2024-04-17 Wed 10:13]
+#+startup: overview
+
+[[file:images/arithmetic_logical_commands.png]]
+* add
+1. pop two top-most values and add them
+2. push result on stack
+* sub
+. pop two top-most values and substract
+. push result on stack
+* neg
+. pop tow-most value
+. negate
+. push negated value
+* eq
+ pop 2 top values
+ push result of equal(val1, val2)
+* or
+ pop 2 top values
+ push result of or(val1, val2)
+* lt

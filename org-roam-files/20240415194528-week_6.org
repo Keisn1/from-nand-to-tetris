@@ -12,3 +12,19 @@ Assembly Languages
 3. Lookup the binary code for each field
 4. combine theses codes into a single machine language command
 5. output this machine language command
+
+* Symbols
+- JMP, loop, Load ...
+** forward references
+- forward References to Symbols that haven't appeared yet
+  #+begin_src asm
+    JGT cont
+    ...
+    Label cont:
+  #+end_src
+- 2 passes, first pass figure out all addresses
+* [[id:a5a45623-8bea-4e48-bd70-9bc89e7fe3f8][Hack assembly]]
+* The plan
+1. develop a basic assembler that translates symbol-less Hack programs
+2. Develop an ability to handle symbols
+3. morph the basic assembler into an assembler that translates any Hack program

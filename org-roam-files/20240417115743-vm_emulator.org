@@ -1,0 +1,15 @@
+:PROPERTIES:
+:ID:       39798a94-5267-4394-b560-a4769479b613
+:END:
+#+title: VM emulator
+#+date: [2024-04-17 Wed 11:57]
+#+startup: overview
+
+* VM emulator
+- program written in java to execute VM code on varying machines
+** big picture
+[[file:images/vm_emulator_big_picture.png]]
+** 1
+[[file:images/vm_emulator_1.png]]
+** example
+[[file:images/vm_emulator_example.png]]

@@ -8,13 +8,14 @@
 Addressing Instructions
 [[id:214d7233-a7ea-483f-99dc-90c29db299f0][A register]]
 
+* Specification
+[[file:images/A_instruction_spec.png]]
 * Syntax ~@value~
 - non-negativ decimal constant (<= 32767)
 - symbol referring to such a constant
 ** binary syntax ~0value~ (value is 15-bit binary number)
 @21 = 00000000000010101
 - special code '0' at the beginning
-
 * Semantics
 - sets the A register to /value/
 - *Side effect*: RAM[A] becomes the selected RAM register, which value is accessible via M ([[id:483a3830-7d64-4df4-bc7a-1c267ad0a5c4][M register (RAM register)]])

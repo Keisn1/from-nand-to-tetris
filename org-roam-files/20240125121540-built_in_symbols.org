@@ -5,6 +5,8 @@
 #+date: [2024-01-25 Thu 12:15]
 #+startup: overview
 
+[[file:images/Symbols_spec.png]]
+
 - R0 ... R15 (virtual registers)
   - values 0 to 15
   - to denote virtual registers

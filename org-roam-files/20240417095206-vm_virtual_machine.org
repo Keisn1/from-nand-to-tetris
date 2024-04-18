@@ -1,0 +1,35 @@
+:PROPERTIES:
+:ID:       e626a575-ab78-45d0-b865-574cc5d740a9
+:END:
+#+title: VM (virtual machine)
+#+date: [2024-04-17 Wed 09:52]
+#+startup: overview
+
+* VM
+- need to build many different compilers for different systems
+- JavaVirtualMachine "Write once, run anywhere"
+- abstraction/ imaginery artifact
+- 2 tier compilation
+  1. program code to vm-code (java-code to bytecode)
+     - vm-code designed to run on abstract artifact (/virtual machine/)
+  2. equip target device with VM implementation (JavaVirtualMachineImplementation)
+     - translates vm-code to target code of the device
+     - translater is device-dependent
+
+** In Jack
+1. Jack program gets compiled into VM code
+2. VM emulator will execute VMcode on own PC
+   - emulator treats other program as data
+   - thinking about thinking
+   - programs that are running other programs
+3. VM translater will translate to Hack language
+* VM language
+[[file:images/vm_language.png]]
+* [[id:b9cbac4e-068d-4284-afb7-63b4eb8f59e0][Stack machine]]
+* [[id:8e0b32fd-f3ac-4480-bdb9-a420d1139180][VM Implementation]]
+* Pointer manipulation
+** 1
+[[file:images/pointerManipulation.png]]
+** 2
+[[file:images/pointer_manipulation_2.png]]
+* [[id:cda90a7e-463e-4c8f-b001-a5fe1f8e0504][VM translator]]
