@@ -8,8 +8,23 @@
 * VM emulator
 - program written in java to execute VM code on varying machines
 ** big picture
+- running emulator on any pc
+- provided by authors
 [[file:images/vm_emulator_big_picture.png]]
-** 1
+** use cases
+- running (compiled) jack programs
+- Testing programs (systematically)
+- experimenting with VM commands
+- observing the VM internals
+- observing on how the VM is realized on the host platform
+
+** provided VM Emulator
+- abstraction
+- left: compiled Jack code to VM code
+- top: controls to control the code execution
+- right-top: visual program output
+
+
 [[file:images/vm_emulator_1.png]]
 ** example
 [[file:images/vm_emulator_example.png]]

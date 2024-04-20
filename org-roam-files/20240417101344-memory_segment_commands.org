@@ -7,15 +7,14 @@
 
 * Variables
 ** Kinds of variables
-- introducing different kinds of variables with virtual memory segments
-*** Argument variables
-*** static variables
-*** local variables
+[[file:images/all_memory_segments.png]]
+- introducing different kinds of variables with virtual memory segments, e.g.
+  - Argument variables
+  - static variables
+  - local variables
 ** VM code Without memory segments
 [[file:images/variable_kinds.png]]
 ** VM codewith memory segments
 [[file:images/memory_segments.png]]
 [[file:images/memory_segments_2.png]]
-* all memory segments
-[[file:images/all_memory_segments.png]]
 * [[id:55377525-b38d-4ca6-884a-e9ca965164f8][Memory segments implementation]]

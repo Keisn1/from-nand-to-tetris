@@ -5,21 +5,27 @@
 #+date: [2024-04-17 Wed 10:13]
 #+startup: overview
 
+
+* all
 [[file:images/arithmetic_logical_commands.png]]
-* add
+* Logical
+[[file:images/logical_commands_example.png]]
+** or
+ pop 2 top values
+ push result of or(val1, val2)
+** lt
+* arithemtic
+[[file:images/arithmetic_commands_example.png]]
+** add
 1. pop two top-most values and add them
 2. push result on stack
-* sub
+** sub
 . pop two top-most values and substract
 . push result on stack
-* neg
+** neg
 . pop tow-most value
 . negate
 . push negated value
-* eq
+** eq
  pop 2 top values
  push result of equal(val1, val2)
-* or
- pop 2 top values
- push result of or(val1, val2)
-* lt

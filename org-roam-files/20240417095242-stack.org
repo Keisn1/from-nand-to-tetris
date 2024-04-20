@@ -1,16 +1,18 @@
 :PROPERTIES:
 :ID:       b9cbac4e-068d-4284-afb7-63b4eb8f59e0
 :END:
-#+title: Stack machine
+#+title: Stack machine implementation
 #+date: [2024-04-17 Wed 09:52]
 #+startup: overview
 
 - hits balance between Compilation to VM code and translation to target language
-* Architecture
-** [[id:1c166d79-3f8e-45a0-aa1c-0157e1b08937][stack arithmetic / logic commands]]
-** [[id:10ca2929-07a9-48fd-bcb2-87c29de91126][memory segment commands]]
-** branching commands
-** function commands
+
+* [[id:1c166d79-3f8e-45a0-aa1c-0157e1b08937][stack arithmetic / logic commands]]
+* Pointer manipulation
+** 1
+[[file:images/pointerManipulation.png]]
+** 2
+[[file:images/pointer_manipulation_2.png]]
 * Implementation
 :PROPERTIES:
 :ID:       cc835f0a-e752-419b-9329-20c405e29750

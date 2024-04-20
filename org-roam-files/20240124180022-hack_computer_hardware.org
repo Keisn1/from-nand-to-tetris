@@ -10,7 +10,7 @@
 * chip hierarchy
 [[file:images/chip_hierarchy.png][Hardware organization: chip hierarchy]]
 * Implementation
-[[file:images/overview_implementation.png]]
+
 * Components
 ** Instruction memory (ROM)
 - also a sequence of 16-bit registers
