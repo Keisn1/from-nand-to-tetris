@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       89002045-2421-4e5e-b7fa-55e4f8d4121c
+:END:
+#+title: test script
+#+date: [2024-04-21 Sun 13:44]
+#+startup: overview
+
+written in testing descriptive language
+* what they look like
+[[file:images/test_script.png]]

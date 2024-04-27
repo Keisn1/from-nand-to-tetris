@@ -17,14 +17,11 @@
 - experimenting with VM commands
 - observing the VM internals
 - observing on how the VM is realized on the host platform
-
 ** provided VM Emulator
 - abstraction
 - left: compiled Jack code to VM code
 - top: controls to control the code execution
 - right-top: visual program output
-
-
 [[file:images/vm_emulator_1.png]]
 ** example
 [[file:images/vm_emulator_example.png]]

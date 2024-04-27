@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       53b6c1ea-6b36-45ec-83d6-4468e7260075
+:END:
+#+title: Vm translation to symbolic hack code
+#+date: [2024-04-21 Sun 14:04]
+#+startup: overview
+
+* Symbolic hack code
+[[file:images/symbolic_hack_code.png]]
+
+* [[id:4d8b1e78-c260-4ba8-a653-21dec5c99fb6][Standard VM mapping]]

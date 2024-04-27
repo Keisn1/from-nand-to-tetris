@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       40e051d5-e28f-4929-aaf2-2b7353b74d85
+:END:
+#+title: VM language
+#+date: [2024-04-21 Sun 14:02]
+#+startup: overview
+
+[[file:images/vm_language.png]]
+[[id:1c166d79-3f8e-45a0-aa1c-0157e1b08937][stack arithmetic / logic commands]]
+[[id:10ca2929-07a9-48fd-bcb2-87c29de91126][memory segment commands]]
+[[id:55a42945-5cb9-4211-b208-34b990889a7c][Branching VM]]

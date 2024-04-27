@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       55a42945-5cb9-4211-b208-34b990889a7c
+:END:
+#+title: Branching VM 
+#+date: [2024-04-27 Sat 18:07]
+#+startup: overview
+
+* Commands
+[[file:images/VM_branching_commands.png]]
+* Branching
+** Conditional Branching
+[[file:images/conditional_branching_VM.png]]
+** Unconditional Branching
+[[file:images/unconditional_branching_VM.png]]

@@ -1,0 +1,22 @@
+:PROPERTIES:
+:ID:       1b7dfbff-50e8-4d16-b75e-a03a858de611
+:END:
+#+title: additional info for project 7
+#+date: [2024-04-21 Sun 14:42]
+#+startup: overview
+
+* Logging
+- let the translator emit a command for each command that is translated
+[[file:images/project7_tips.png]]
+* Development plan
+[[file:images/dev_plan_1.png]]
+[[file:images/dev_plan_2.png]]
+[[file:images/dev_plan_3.png]]
+* Tools and resources
+[[file:images/tools_and_resources.png]]
+* Testing challenges
+[[file:images/test_script_with_init.png]]
+- load test scripts instead of vm code
+  - no function declaration command
+  - therefore noone told simulator to allocate certain memories (e.g. for constant)
+- tdl uses ";" as the end of a step

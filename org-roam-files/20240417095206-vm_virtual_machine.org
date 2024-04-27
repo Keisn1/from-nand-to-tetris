@@ -23,13 +23,7 @@
    - thinking about thinking
    - programs that are running other programs
 3. VM translater will translate to Hack language
-** VM language
-[[file:images/vm_language.png]]
-** Architecture
-*** [[id:1c166d79-3f8e-45a0-aa1c-0157e1b08937][stack arithmetic / logic commands]]
-*** [[id:10ca2929-07a9-48fd-bcb2-87c29de91126][memory segment commands]]
-*** branching commands
-*** function commands
+* [[id:40e051d5-e28f-4929-aaf2-2b7353b74d85][VM language]]
 * [[id:8e0b32fd-f3ac-4480-bdb9-a420d1139180][VM Implementation]]
 * [[id:cda90a7e-463e-4c8f-b001-a5fe1f8e0504][VM translator]]
 * [[id:39798a94-5267-4394-b560-a4769479b613][VM emulator]]

@@ -6,3 +6,4 @@
 #+startup: overview
 
 * [[id:e626a575-ab78-45d0-b865-574cc5d740a9][VM (virtual machine)]]
+* [[id:1b7dfbff-50e8-4d16-b75e-a03a858de611][additional info for project 7]]

@@ -6,4 +6,14 @@
 #+startup: overview
 
 * VM translator perpective
+** perspective
+k
 [[file:images/vm_translator_perspective.png]]
+** translator
+[[file:images/vm_translator.png]]
+** purpose
+- reexpressing commands written in VM code as assembly code of the target platform
+** usage specification
+[[file:images/vm_translator_usage.png]]
+
+* [[id:53b6c1ea-6b36-45ec-83d6-4468e7260075][Vm translation to symbolic hack code]]

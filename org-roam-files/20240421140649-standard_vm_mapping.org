@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       4d8b1e78-c260-4ba8-a653-21dec5c99fb6
+:END:
+#+title: Standard VM mapping
+#+date: [2024-04-21 Sun 14:06]
+#+startup: overview
+
+* Purpose
+[[file:images/standard_vm_mapping.png]]
+* Mapping
+** RAM structure
+[[file:images/std_mapping_vm_hack.png]]
+** Symbol convention
+[[file:images/standard_vm_mapping_symbol_convention.png]]
