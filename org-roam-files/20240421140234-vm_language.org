@@ -6,6 +6,7 @@
 #+startup: overview
 
 [[file:images/vm_language.png]]
-[[id:1c166d79-3f8e-45a0-aa1c-0157e1b08937][stack arithmetic / logic commands]]
-[[id:10ca2929-07a9-48fd-bcb2-87c29de91126][memory segment commands]]
-[[id:55a42945-5cb9-4211-b208-34b990889a7c][Branching VM]]
+* [[id:1c166d79-3f8e-45a0-aa1c-0157e1b08937][stack arithmetic / logic commands]]
+* [[id:10ca2929-07a9-48fd-bcb2-87c29de91126][memory segment commands]]
+* [[id:55a42945-5cb9-4211-b208-34b990889a7c][Branching VM]]
+* [[id:0dcb2d37-8864-4714-940e-e005f6009204][Functions VM]]

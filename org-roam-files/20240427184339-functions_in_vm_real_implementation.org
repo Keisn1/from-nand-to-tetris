@@ -1,0 +1,24 @@
+:PROPERTIES:
+:ID:       8a40c0d9-19e4-44cd-9bdd-6772b9ec5c5e
+:END:
+#+title: Functions in VM - real implementation
+#+date: [2024-04-27 Sat 18:43]
+#+startup: overview
+
+* Preview
+** function's state
+[[file:images/function_state_preview.png]]
+[[file:images/function_state_preview_2.png]]
+** big picture
+[[file:images/function_state_preview_big_picture.png]]
+** call of function
+[[file:images/function_state_preview_details_call.png]]
+** entering called function
+[[file:images/function_state_preview_details_called_function_executing.png]]
+** return
+[[file:images/function_state_preview_details_return.png]]
+** global stack
+[[file:images/global_stack.png]]
+* Run-time simulation
+
+* Detailed implementation

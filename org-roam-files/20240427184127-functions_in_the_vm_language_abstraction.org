@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       04eb1d68-3caa-4beb-aa6a-53cc4c3e9a78
+:END:
+#+title: Functions in the VM language - Abstraction
+#+date: [2024-04-27 Sat 18:41]
+#+startup: overview
+
+* Functions in the VM language - Abstraction
+[[file:images/Functions_in_vm_language.png]]
+** defining
+[[file:images/Functions_in_vm_language_defining.png]]
+** executing
+[[file:images/Functions_in_vm_language_executing.png]]
+** Implementation
+[[file:images/Functions_in_vm_language_implementation.png]]
+*** notes
+- *Callee always needs to push a value on to the stack before it returns!*
+  - push it onto the stack of the caller
+    - needs to remove arguments before that

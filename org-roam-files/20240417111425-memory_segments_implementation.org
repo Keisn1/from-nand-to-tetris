@@ -5,7 +5,7 @@
 #+date: [2024-04-17 Wed 11:14]
 #+startup: overview
 
-* Local
+* DONE Local
 - LCL pointer (local)
 - points to base address of local stack
 ** 1
@@ -14,29 +14,29 @@
 [[file:images/implementation_local_2.png]]
 ** summary
 [[file:images/implementation_local_summary.png]]
-* Local/arguments/this/that
+* DONE Local/arguments/this/that
 ** big picture
 [[file:images/implement_local_args_this_that_big_picture.png]]
 - abstractly completely the same, same operations
 - implementation precisely the same as well
 [[file:images/implement_local_args_this_that.png]]
-* constant
+* DONE constant
 - no pop constant
 - no real implementation
 [[file:images/implementation_const.png]]
-* static
+* DONE temp
+** big picture
+[[file:images/implementation_temp_big_picture.png]]
+** implementation
+[[file:images/implementation_temp.png]]
+* DONE static
 - e.g. class level variables
 - not-platform agnostic (only one till here)
 ** big picture
 [[file:images/implementation_static_big_picture.png]]
 ** implementation
 [[file:images/implementation_static.png]]
-* temp
-** big picture
-[[file:images/implementation_temp_big_picture.png]]
-** implementation
-[[file:images/implementation_temp.png]]
-* pointer
+* DONE pointer
 ** big picture
 [[file:images/implementation_pointer_big_picture.png]]
 ** implementation

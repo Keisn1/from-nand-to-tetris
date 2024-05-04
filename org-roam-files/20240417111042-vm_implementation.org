@@ -7,6 +7,8 @@
 
 * [[id:cc835f0a-e752-419b-9329-20c405e29750][Stack Machine Implementation]]
 * [[id:55377525-b38d-4ca6-884a-e9ca965164f8][Memory segments implementation]]
+* [[id:55a42945-5cb9-4211-b208-34b990889a7c][Branching VM]]
+
 * [[id:4d8b1e78-c260-4ba8-a653-21dec5c99fb6][Standard VM mapping]]
 * [[id:8a226843-7c7f-4224-ab34-62456223b5ea][VM proposed implementation design]]
 * [[id:1b7dfbff-50e8-4d16-b75e-a03a858de611][additional info for project 7]]

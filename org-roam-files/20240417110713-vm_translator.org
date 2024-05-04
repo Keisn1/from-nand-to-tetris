@@ -7,7 +7,6 @@
 
 * VM translator perpective
 ** perspective
-k
 [[file:images/vm_translator_perspective.png]]
 ** translator
 [[file:images/vm_translator.png]]
