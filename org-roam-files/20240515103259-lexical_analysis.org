@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       1d46cdb2-c821-4cfc-b428-f2f6e4a27625
+:END:
+#+title: Lexical analysis - Tokenizer
+#+date: [2024-05-15 Wed 10:32]
+#+startup: overview
+
+* Tokenizing
+** first approximation
+[[file:images/tokenizer_first_approximation.png]]
+** Jack Tokenizer
+*** Example1
+[[file:images/tokenizer_example1.png]]
+*** Example2
+[[file:images/tokenizer_example2.png]]
+
+* [[id:0f8f4f0c-cdfe-482f-a147-daff4c851d0a][Jack tokenizer api]]

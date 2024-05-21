@@ -1,0 +1,14 @@
+:PROPERTIES:
+:ID:       cfbb95ae-07cd-4bf4-b888-884363bb2337
+:END:
+#+title: Parse logic
+#+date: [2024-05-15 Wed 11:30]
+#+startup: overview
+
+* Overview
+[[file:images/parse_logic1.png]]
+* Compile WhileStatement
+[[file:images/parse_logic2.png]]
+[[file:images/parse_logic_while.png]]
+* Parser design
+[[file:images/parser_design.png]]

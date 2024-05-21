@@ -12,3 +12,10 @@
 [[file:images/std_mapping_vm_hack.png]]
 ** Symbol convention
 [[file:images/standard_vm_mapping_symbol_convention.png]]
+** Symbol convention extended
+[[file:images/special_symbols_in_vm_programs.png]]
+* Whole Hack Ram (especially for Hack platform)
+[[file:images/Hack_ram_stack_for_vm_implementation.png]]
+
+* Symbols
+[[file:images/special_symbols_in_vm_programs.png]]

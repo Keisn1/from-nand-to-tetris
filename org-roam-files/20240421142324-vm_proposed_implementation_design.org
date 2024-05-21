@@ -14,9 +14,15 @@
 [[file:images/dev_plan_3.png]]
 
 * Main
+** without directory
 [[file:images/vm_translator_implementation_desgin.png]]
+** with dir
+[[file:images/main_implementation.png]]
 * Parser
 [[file:images/parser_part1.png]]
 [[file:images/parser_part2.png]]
+need to look if i need to extend the parser
 * CodeWriter
 [[file:images/code_writer_design.png]]
+** additional functionality
+[[file:images/code_writer_design_extended.png]]

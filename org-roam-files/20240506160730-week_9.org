@@ -1,0 +1,9 @@
+:PROPERTIES:
+:ID:       eb5e71b7-aac2-445c-a1ce-c604ab5218e8
+:END:
+#+title: week 9
+#+date: [2024-05-06 Mon 16:07]
+#+startup: overview
+
+* [[id:1a7a1b11-c355-4556-b101-8557f87d541c][Jack programming language]]
+* [[id:25d009ad-94df-47d5-b321-0ba6209a2a0a][Developing Apps and OS]]

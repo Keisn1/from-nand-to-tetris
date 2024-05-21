@@ -1,0 +1,17 @@
+:PROPERTIES:
+:ID:       11432031-bb38-4f3d-b389-79e13995280f
+:END:
+#+title: Jack analyzer
+#+date: [2024-05-15 Wed 12:05]
+#+startup: overview
+
+* Xml code is used to unit test output of [[id:946983b5-8aa5-446c-905f-acb58741c371][syntax analyzer]]
+[[file:images/jack_analyzer1.png]]
+* handling terminal rules
+[[file:images/terminal_rules.png]]
+
+* non-terminal rules
+** first subset
+[[file:images/non_terminal_rules1.png]]
+** second subset (shallow rules)
+[[file:images/non_terminal_rules2.png]]

@@ -1,0 +1,26 @@
+:PROPERTIES:
+:ID:       c8fff66e-7a95-45cb-af1a-84a18d807faf
+:END:
+#+title: Jack grammar
+#+date: [2024-05-15 Wed 11:52]
+#+startup: overview
+
+* Overview
+- question mark "?" means optional
+[[file:images/jack_grammer.png]]
+[[file:images/jack_grammer2.png]]
+* Grammar notation
+[[file:images/jack_grammar_notation.png]]
+* Entire Jack grammar
+** Lexical elements
+[[file:images/lexical_elements.png]]
+** Program structure
+[[file:images/program_structure.png]]
+** Statements
+[[file:images/jack_statements_all.png]]
+** expressions
+[[file:images/jack_expressions.png]]
+*** parsing term
+[[file:images/jack_expressions_more_detail.png]]
+* End note
+[[file:images/endNote.png]]

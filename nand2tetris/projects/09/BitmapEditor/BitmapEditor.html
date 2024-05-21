@@ -5,6 +5,8 @@
     <title>Sokoban Bitmap Editor</title>
     <script type="text/javascript">
         var grid = new Array(0);
+        var nbrRows = 16;
+        var nbrCols = 32;
 
         function Init() {
             grid = InitGrid();
@@ -12,10 +14,10 @@
         }
 
         function InitGrid() {
-            var _grid = new Array(16);
-            for (i=0; i<16; i++) {
-                _grid[i] = new Array(16);
-                for (j=0; j<16; j++) {
+            var _grid = new Array(nbrRows);
+            for (i=0; i<nbrRows; i++) {
+                _grid[i] = new Array(nbrCols);
+                for (j=0; j<nbrCols; j++) {
                     _grid[i][j]=false;
                 }
             }
@@ -25,7 +27,7 @@
         function RotateBitmapRight() {
             var _grid = InitGrid();
 
-            for (i=0; i<16; i++) {
+            for (i=0; i<nbrCols; i++) {
                 for (j=0; j<16; j++) {
                     _grid[j][15-i]=grid[i][j];
                 }
@@ -51,9 +53,9 @@
         function DisplayGrid() {
             var str = "<table border=1 cellspacing=0>";
             var i,j, backgroundColor;
-            for (i=-1; i<16; i++) {
+            for (i=-1; i<nbrRows; i++) {
                 str=str+"<tr>";
-                for (j=-1; j<16; j++) {
+                for (j=-1; j<nbrCols; j++) {
                     if (i == -1 && j != -1) {
                         str=str+"<td>" + (j+1) + "</td>";
                     } else if (i != -1 && j == -1) {
@@ -100,52 +102,22 @@
             generateCode = document.getElementById('generatedCode');
             generateCode.value =    methodType + " void " +
                                     document.getElementById('functionName').value +
-                                    "(int location) {\n\tlet memAddress = 16384+location;\n";
+                                    "() {\n\t\n";
 
-            for (i=0; i<16; i++) {
+            for (i=0; i<nbrRows; i++) {
                 //get grid binary representation
                 binary = "";
-                for (j=0; j<16; j++) {
+                for (j=0; j<nbrCols; j++) {
                     if (grid[i][j])
-                        binary = "1" + binary;
-                    else
-                        binary = "0" + binary;
+                        generateCode.value = generateCode.value + GenerateCodeLine(i, j);
                 }
-              
-                isNegative = false;
-                //if number is negative, get its  one's complement
-                if (binary[0] == "1") {
-                    isNegative = true;
-                    oneComplement = "";
-                    for (k=0; k<16; k++) {
-                        if (binary[k] == "1")
-                            oneComplement = oneComplement + "0";
-                        else
-                            oneComplement = oneComplement + "1";
-                    }
-                    binary = oneComplement;                 
-                }
-                
-                //calculate one's complement decimal value
-                value = 0;
-                for (k=0; k<16; k++) {
-                    value = value * 2;
-                    if (binary[k] == "1")
-                        value=value+1;
-                }                
-
-                //two's complement value if it is a negative value
-                if (isNegative == true)
-                    value = -(value + 1)
-
-                generateCode.value = generateCode.value + GenerateCodeLine(i, value);
             }
 
             generateCode.value = generateCode.value + "\treturn;\n}";
         }
 
-        function GenerateCodeLine(row, value) {
-            str = "\tdo Memory.poke(memAddress+" + row*32 + ", " + value + ");\n";
+        function GenerateCodeLine(row, col) {
+            str = "\tdo set(" + row + ", " + col + ");\n";
             return str;
         }
     </script>

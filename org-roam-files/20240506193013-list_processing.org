@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       4e901650-b696-4a6a-a12d-4a28cd899b39
+:END:
+#+title: List processing
+#+date: [2024-05-06 Mon 19:30]
+#+startup: overview
+
+* List definition
+- the atom ~null~
+- or an atom, followed by a list
+  (Nations: (atom, (list)))
+[[file:images/list_processing_1.png]]
+
+** List API
+- car ("Contents of the address register")
+  - chatGPT
+    In list processing, especially in Lisp programming languages, "car" refers to a function that retrieves the first element of a list. The term "car" comes from the original Lisp abbreviation for "Contents of the Address Register" and has been used historically to refer to the first element of a list.
+
+- cdr ("Contents of the decrement register")
+  - chatGPT
+    In list processing, particularly in Lisp programming languages, "cdr" refers to a function that retrieves the rest of the elements of a list after the first element. The term "cdr" comes from the original Lisp abbreviation for "Contents of the Decrement Register" and has been used historically to refer to the rest of a list after the first element.
+[[file:images/list_api.png]]
+** List Creation
+[[file:images/list_creation.png]]
+** sequential access
+[[file:images/list_sequential_access.png]]
+** recursive access
+[[file:images/list_recursive_access.png]]
+** Representation in memory
+[[file:images/list_representation.png]]

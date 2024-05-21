@@ -1,0 +1,18 @@
+:PROPERTIES:
+:ID:       1da00280-f764-45a3-a7be-17f679ec9a11
+:END:
+#+title: Grammars
+#+date: [2024-05-15 Wed 11:11]
+#+startup: overview
+
+* example english
+
+[[file:images/grammar_english.png]]
+
+** non terminal rule
+all other rules
+** terminal rule
+right hand side includes constatns only
+* [[id:c8fff66e-7a95-45cb-af1a-84a18d807faf][Jack grammar]]
+* LL grammars
+[[file:images/ll_grammars.png]]

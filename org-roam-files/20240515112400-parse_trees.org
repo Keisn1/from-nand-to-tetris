@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       fd26b73c-084c-4ca1-9aae-566ed6395ae5
+:END:
+#+title: Parse Trees
+#+date: [2024-05-15 Wed 11:24]
+#+startup: overview
+
+* english
+[[file:images/parse_tree_english.png]]
+* jack tree
+[[file:images/parse_tree_jack.png]]
+** subtree in xml
+[[file:images/parse_tree_jack2.png]]

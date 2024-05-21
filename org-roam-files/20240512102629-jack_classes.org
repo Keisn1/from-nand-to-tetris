@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       6e479eb9-1747-4a6d-aedd-c091bc890417
+:END:
+#+title: Jack classes
+#+date: [2024-05-12 Sun 10:26]
+#+startup: overview
+
+* Basic compilation unit
+[[file:images/jack_classes.png]]
+* Classes that provide functionality
+[[file:images/classes_as_libraries.png]]
+* Classes that represent entities
+[[file:images/classes_as_entities.png]]
+* Refactoring
+[[file:images/classes_refactoring.png]]
+* Subroutines
+[[file:images/jack_subroutines.png]]
+** Constructors
+[[file:images/jack_constructors.png]]
+* Variables
+[[file:images/jack_classes_variables.png]]
+
+[[file:images/variables.png]]

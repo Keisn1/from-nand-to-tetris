@@ -1,0 +1,23 @@
+:PROPERTIES:
+:ID:       88ad9c0e-da61-4b86-8b6b-cdde95095f37
+:END:
+#+title: object based programming
+#+date: [2024-05-06 Mon 16:18]
+#+startup: overview
+
+* Client view
+[[file:images/oo_programming_using_a_class.png]]
+
+* Developer view
+** getters and setters
+[[file:images/getters_and_setters.png]]
+** constructors/methods/functions
+[[file:images/functions_methods_functions.png]]
+[[file:images/functions_methods_functions_2.png]]
+** print
+[[file:images/print.png]]
+** dispose
+[[file:images/dispose.png]]
+* Plumber view
+** object representation
+[[file:images/object_representation.png]]

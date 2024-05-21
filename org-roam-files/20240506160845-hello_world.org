@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       c35db41d-ba46-489e-a2e5-0f3fc2a92923
+:END:
+#+title: hello world
+#+date: [2024-05-06 Mon 16:08]
+#+startup: overview
+
+[[file:images/hello_world.png]]

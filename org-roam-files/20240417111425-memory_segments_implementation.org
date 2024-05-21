@@ -36,7 +36,7 @@
 [[file:images/implementation_static_big_picture.png]]
 ** implementation
 [[file:images/implementation_static.png]]
-* DONE pointer
+* pointer
 ** big picture
 [[file:images/implementation_pointer_big_picture.png]]
 ** implementation

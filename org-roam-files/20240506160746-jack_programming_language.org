@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       1a7a1b11-c355-4556-b101-8557f87d541c
+:END:
+#+title: Jack programming language
+#+date: [2024-05-06 Mon 16:07]
+#+startup: overview
+
+* [[id:c35db41d-ba46-489e-a2e5-0f3fc2a92923][hello world]]
+* [[id:3dbc566b-c98e-4159-9dcf-aab031741f83][Jack language specification]]
+* [[id:88ad9c0e-da61-4b86-8b6b-cdde95095f37][object based programming]]
+* [[id:4e901650-b696-4a6a-a12d-4a28cd899b39][List processing]]
+* [[id:4e7c1f0a-7b22-4b06-b31b-7a650ea36c56][Jack application]]

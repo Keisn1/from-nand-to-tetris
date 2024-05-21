@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       c24b0eb8-325d-40bb-809e-a4dff5342dca
+:END:
+#+title: Jack data types
+#+date: [2024-05-12 Sun 10:13]
+#+startup: overview
+
+* Types
+[[file:images/jack_data_types.png]]
+* Type Conversions
+[[file:images/jack_type_conversions.png]]

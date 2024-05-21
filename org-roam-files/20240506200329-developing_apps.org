@@ -1,0 +1,37 @@
+:PROPERTIES:
+:ID:       25d009ad-94df-47d5-b321-0ba6209a2a0a
+:END:
+#+title: Developing Apps and OS
+#+date: [2024-05-06 Mon 20:03]
+#+startup: overview
+
+* Developing a Jack application
+[[file:images/developing_jack_application.png]]
+* Handling text
+[[file:images/handling_text.png]]
+* Handling graphics
+[[file:images/handling_graphics.png]]
+* Handling inputs
+[[file:images/handling_inputs.png]]
+* character set
+[[file:images/charset.png]]
+* math
+[[file:images/math_jack_os.png]]
+* string
+[[file:images/string_jack_os.png]]
+* array
+[[file:images/array_jack_os.png]]
+* Memory
+[[file:images/memory_jack_os.png]]
+* Sys
+[[file:images/sys_jack_os.png]]
+* Output
+[[file:images/output_jack_os.png]]
+* Screen
+[[file:images/screen_jack_os.png]]
+* Keyboard
+[[file:images/keyboard_jack_os.png]]
+* [[id:aa5d0ca2-c831-432c-8979-7aa7fe08d43e][Graphics optimization]]
+* Best practices
+[[file:images/best_practices_app_dev.png]]
+* [[id:8541176e-a4ca-4888-a813-09636e0fab34][Square Dance]]

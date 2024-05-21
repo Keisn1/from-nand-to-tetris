@@ -1,0 +1,20 @@
+:PROPERTIES:
+:ID:       c7195984-9690-44f5-a3f9-acecc349ba04
+:END:
+#+title: Preview (VM Program control)
+#+date: [2024-05-04 Sat 10:21]
+#+startup: overview
+
+* function's state
+[[file:images/function_state_preview.png]]
+[[file:images/function_state_preview_2.png]]
+* big picture
+[[file:images/function_state_preview_big_picture.png]]
+* call of function
+[[file:images/function_state_preview_details_call.png]]
+* entering called function
+[[file:images/function_state_preview_details_called_function_executing.png]]
+* return
+[[file:images/function_state_preview_details_return.png]]
+* global stack
+[[file:images/global_stack.png]]

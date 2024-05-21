@@ -1,0 +1,19 @@
+:PROPERTIES:
+:ID:       052aabf5-2cae-4d6a-b62f-805b26ba2fcb
+:END:
+#+title: week 10
+#+date: [2024-05-15 Wed 10:11]
+#+startup: overview
+
+* Compiler development road
+:PROPERTIES:
+:ID:       946983b5-8aa5-446c-905f-acb58741c371
+:END:
+[[file:images/compiler_roadmap.png]]
+* [[id:1d46cdb2-c821-4cfc-b428-f2f6e4a27625][Lexical analysis - Tokenizer]]
+* [[id:1da00280-f764-45a3-a7be-17f679ec9a11][Grammars]]
+* [[id:fd26b73c-084c-4ca1-9aae-566ed6395ae5][Parse Trees]]
+* [[id:cfbb95ae-07cd-4bf4-b888-884363bb2337][Parse logic]]
+* [[id:11432031-bb38-4f3d-b389-79e13995280f][Jack analyzer]]
+* [[id:50b7adfb-ebf5-420b-8a56-34a3d4fd75f9][analyzer implementation]]
+* [[id:3f71ad9a-1083-4ce8-be9c-b5733eddbdf6][handling expressions]]

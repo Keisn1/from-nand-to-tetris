@@ -1,0 +1,10 @@
+:PROPERTIES:
+:ID:       4e7c1f0a-7b22-4b06-b31b-7a650ea36c56
+:END:
+#+title: Jack application
+#+date: [2024-05-12 Sun 10:46]
+#+startup: overview
+
+[[file:images/jack_application.png]]
+* [[id:25d009ad-94df-47d5-b321-0ba6209a2a0a][Developing Apps and OS]]
+* [[id:aa5d0ca2-c831-432c-8979-7aa7fe08d43e][Graphics optimization]]

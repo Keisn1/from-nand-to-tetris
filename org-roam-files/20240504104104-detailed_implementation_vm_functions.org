@@ -1,0 +1,62 @@
+:PROPERTIES:
+:ID:       8b604a65-cbce-4b1a-9bf8-e994f4bd3b1e
+:END:
+#+title: Detailed implementation VM-Functions (call and return)
+#+date: [2024-05-04 Sat 10:41]
+#+startup: overview
+
+* VM Function Commands
+[[file:images/vm_function_commands.png]]
+* Contract
+** the calling function's view
+[[file:images/calling_function_view.png]]
+** the callee function's view
+[[file:images/callee_function_view.png]]
+** VM implementation view
+[[file:images/vm_implementation_view.png]]
+* Handling _Call Command_
+** overview
+[[file:images/handling_call_overview.png]]
+** Caller in execution
+[[file:images/handling_call_start.png]]
+** Push Caller state
+[[file:images/handling_call_saving_state.png]]
+** Reposition arg
+[[file:images/handling_call_reposition_arg.png]]
+** LCL = SP
+[[file:images/handling_call_reposition_lcl.png]]
+** goto functionName
+[[file:images/handling_call_goto_functionName.png]]
+** declare label for the return-address
+[[file:images/handling_call_declare_label_for_return_address.png]]
+* Handling _Function Command_
+** overview
+[[file:images/handling_function_overview.png]]
+** Generates a label
+[[file:images/handling_function_label.png]]
+** initialize local variable
+[[file:images/handling_function_initialize_local_vars.png]]
+* Handling _Return Command_
+** Overview
+[[file:images/handling_return_overview.png]]
+** initial state
+[[file:images/handling_return_initial_state.png]]
+** Calculate endFrame
+1. Store endFrame = LCL
+2. Get retAddr = *(endFrame-5)
+3. put into *Arg what is at the top of the stack (/the return value/)
+4. put stackpointer just after ARG
+5. Reset state for segments
+6. That = *(endframe-1)
+7. This = *(endframe-2)
+8. Arg = *(endframe-3)
+9. LCL = *(endframe-4)
+10. Goto retAddr
+*** before pop
+[[file:images/return_before_pop.png]]
+*** after pop
+[[file:images/return_after_pop.png]]
+*** Set stack pointer
+[[file:images/return_reposition_sp.png]]
+*** recover
+[[file:images/return_recover.png]]

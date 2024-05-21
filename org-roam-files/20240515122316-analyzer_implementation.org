@@ -1,0 +1,28 @@
+:PROPERTIES:
+:ID:       50b7adfb-ebf5-420b-8a56-34a3d4fd75f9
+:END:
+#+title: analyzer implementation
+#+date: [2024-05-15 Wed 12:23]
+#+startup: overview
+
+* implementation plan
+- JackTokenizer
+- CompilationEngine
+- JackAnalyzer (top-most module)
+
+* [[id:f844dafd-5e75-4d50-bbfe-287579800329][Jack analyzer api]]
+* [[id:0f8f4f0c-cdfe-482f-a147-daff4c851d0a][Jack tokenizer api]]
+* [[id:6a900e2b-85a7-4424-a8df-20d5b6aa7f74][CompilationEngine design api]]
+* Project
+[[file:images/project_10.png]]
+1. Tokenizer
+[[file:images/tokenizer_project.png]]
+1. Compilation engine
+[[file:images/CompilationEngine.png]]
+   1. Basic Version
+   2. complete version
+* Tips
+- use regular expressions
+- leave expressions for the beginning when developing the engine
+  - expression less files
+   [[file:images/expression_less.png]]

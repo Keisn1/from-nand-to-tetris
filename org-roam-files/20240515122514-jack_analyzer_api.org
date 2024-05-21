@@ -1,0 +1,12 @@
+:PROPERTIES:
+:ID:       f844dafd-5e75-4d50-bbfe-287579800329
+:END:
+#+title: Jack analyzer api
+#+date: [2024-05-15 Wed 12:25]
+#+startup: overview
+
+* usage
+[[file:images/jack_analyzer_usage.png]]
+[[file:images/jack_analyzer_in_action.png]]
+[[file:images/jack_analyzer_partition.png]]
+[[file:images/jack_analyzer_usage_1.png]]

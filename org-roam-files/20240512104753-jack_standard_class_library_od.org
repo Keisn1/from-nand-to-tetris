@@ -1,0 +1,11 @@
+:PROPERTIES:
+:ID:       4040fcec-5a78-450e-b3e3-839fbb3e5ff8
+:END:
+#+title: Jack standard class library OS purposes
+#+date: [2024-05-12 Sun 10:47]
+#+startup: overview
+
+* StdLib
+[[file:images/jack_std_lib.png]]
+* Table
+[[file:images/jack_std_lib_2.png]]

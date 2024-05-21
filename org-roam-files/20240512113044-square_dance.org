@@ -1,0 +1,29 @@
+:PROPERTIES:
+:ID:       8541176e-a4ca-4888-a813-09636e0fab34
+:END:
+#+title: Square Dance
+#+date: [2024-05-12 Sun 11:30]
+#+startup: overview
+
+* MVC
+[[file:images/app_design_mvc.png]]
+* Squal Class
+** Square Class API
+[[file:images/square_api.png]]
+** fields and constructor and dispose
+[[file:images/square_jack1.png]]
+** draw and erase
+[[file:images/square_and_erase.png]]
+** incSize / decSize
+[[file:images/square_increase.png]]
+** moving
+[[file:images/square_moving.png]]
+* SquareGame class
+** constructor and dispose
+[[file:images/game_constructor.png]]
+** moving
+[[file:images/game_movements.png]]
+** run
+[[file:images/game_run.png]]
+* Main
+[[file:images/game_main.png]]

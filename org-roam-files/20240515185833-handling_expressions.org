@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       3f71ad9a-1083-4ce8-be9c-b5733eddbdf6
+:END:
+#+title: handling expressions
+#+date: [2024-05-15 Wed 18:58]
+#+startup: overview
+
+[[file:images/handling_expressions.png]]

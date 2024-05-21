@@ -1,0 +1,8 @@
+:PROPERTIES:
+:ID:       2d3d59b4-eec3-4cef-91c4-058698b5f06d
+:END:
+#+title: Booting
+#+date: [2024-05-04 Sat 12:14]
+#+startup: overview
+
+[[file:images/booting.png]]

@@ -1,0 +1,30 @@
+:PROPERTIES:
+:ID:       aa5d0ca2-c831-432c-8979-7aa7fe08d43e
+:END:
+#+title: Graphics optimization
+#+date: [2024-05-12 Sun 11:53]
+#+startup: overview
+
+* Sprites
+[[file:images/sprites.png]]
+** Hack I/O
+[[file:images/hack_io_refresh.png]]
+** Memory Map
+[[file:images/memory_map_screen.png]]
+** Memory Class in OS peek and poke
+[[file:images/peek_and_poke.png]]
+** Drawing pixels
+[[file:images/drawing_pixels.png]]
+*** drawing regular stuff
+[[file:images/drawing_regular_stuff.png]]
+** irregular images
+*** drawing pixels
+[[file:images/drawing_irregular_stuff_bad.png]]
+*** poking into memory (custom drawing)
+[[file:images/custom_drawing.png]]
+** addressing
+[[file:images/custom_drawing_localisation.png]]
+* Bitmap editor
+[[file:images/bitmap_editor.png]]
+* Best practices
+[[file:images/best_practices_graphics.png]]

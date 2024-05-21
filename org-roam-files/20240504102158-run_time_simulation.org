@@ -1,0 +1,13 @@
+:PROPERTIES:
+:ID:       42ace04f-865f-4287-92c8-af29240d93a5
+:END:
+#+title: Run-time simulation (Function examples)
+#+date: [2024-05-04 Sat 10:21]
+#+startup: overview
+
+* Example: Factorial
+** compile time
+[[file:images/factorial_example.png]]
+** Run-time
+- it's a serious of slides that i can not copy/paste in here, it's changing a lot
+https://www.coursera.org/learn/nand2tetris2/lecture/TrCEK/unit-2-5-function-call-and-return-run-time-simulation

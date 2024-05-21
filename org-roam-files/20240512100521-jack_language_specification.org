@@ -1,0 +1,36 @@
+:PROPERTIES:
+:ID:       3dbc566b-c98e-4159-9dcf-aab031741f83
+:END:
+#+title: Jack language specification
+#+date: [2024-05-12 Sun 10:05]
+#+startup: overview
+
+* whitespace
+[[file:images/syntax_whitespace.png]]
+* keywords
+[[file:images/syntax_keywords.png]]
+* Symbols
+[[file:images/syntax_symbols.png]]
+* Constants
+[[file:images/syntax_constants.png]]
+* Identifiers
+[[file:images/syntax_identifiers.png]]
+* Flow-control
+[[file:images/flow_control.png]]
+* [[id:c24b0eb8-325d-40bb-809e-a4dff5342dca][Jack data types]]
+* [[id:6e479eb9-1747-4a6d-aedd-c091bc890417][Jack classes]]
+* [[id:4e7c1f0a-7b22-4b06-b31b-7a650ea36c56][Jack application]]
+* [[id:4040fcec-5a78-450e-b3e3-839fbb3e5ff8][Jack standard class library OD]]
+* Statements
+[[file:images/jack_statements.png]]
+* Expressions
+[[file:images/jack_expressions.png]]
+* Subroutine calls
+[[file:images/jack_subroutines_calls.png]]
+* Strings
+[[file:images/jack_strings.png]]
+* [[id:4e901650-b696-4a6a-a12d-4a28cd899b39][List processing]]
+* Arrays
+[[file:images/jack_arrays.png]]
+* Peculiar features of Jack language
+[[file:images/peculiar_features.png]]

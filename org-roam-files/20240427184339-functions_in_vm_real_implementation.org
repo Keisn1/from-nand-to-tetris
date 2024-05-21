@@ -5,20 +5,6 @@
 #+date: [2024-04-27 Sat 18:43]
 #+startup: overview
 
-* Preview
-** function's state
-[[file:images/function_state_preview.png]]
-[[file:images/function_state_preview_2.png]]
-** big picture
-[[file:images/function_state_preview_big_picture.png]]
-** call of function
-[[file:images/function_state_preview_details_call.png]]
-** entering called function
-[[file:images/function_state_preview_details_called_function_executing.png]]
-** return
-[[file:images/function_state_preview_details_return.png]]
-** global stack
-[[file:images/global_stack.png]]
-* Run-time simulation
-
-* Detailed implementation
+* [[id:c7195984-9690-44f5-a3f9-acecc349ba04][Preview]]
+* [[id:42ace04f-865f-4287-92c8-af29240d93a5][Run-time simulation]]
+* [[id:8b604a65-cbce-4b1a-9bf8-e994f4bd3b1e][Detailed implementation]]
